@@ -1,6 +1,3 @@
---2023-12-11 11:50:30--  https://msralaphilly2.blob.core.windows.net/release/BioGPT/checkpoints/QA-PubMedQA-BioGPT.tgz?sp=r
-Resolving msralaphilly2.blob.core.windows.net (msralaphilly2.blob.core.windows.net)... 52.239.193.100
-Connecting to msralaphilly2.blob.core.windows.net (msralaphilly2.blob.core.windows.net)|52.239.193.100|:443... connected.
-HTTP request sent, awaiting response... 409 Public access is not permitted on this storage account.
-2023-12-11 11:50:31 ERROR 409: Public access is not permitted on this storage account..
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:da1bbd13bfc08b44cb61c84ae11c00b994432492994321bcaf1632522d24c415
+size 537

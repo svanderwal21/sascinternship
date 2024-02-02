@@ -1,9 +1,3 @@
-python run_clm.py \
-    --model_name_or_path /exports/sascstudent/svanderwal2/programs/BioGPT-Large \
-    --train_file path_to_train_file \
-    --validation_file path_to_validation_file \
-    --per_device_train_batch_size 8 \
-    --per_device_eval_batch_size 8 \
-    --do_train \
-    --do_eval \
-    --output_dir /tmp/test-clm
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a27b0846bde9dd21e292de848cfc962264b46e73d8d692a39680f7f293c6dc2
+size 327

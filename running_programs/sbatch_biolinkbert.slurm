@@ -1,22 +1,3 @@
-#!/bin/bash
-#
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --time=05:00
-#SBATCH --mem 16G
-#SBATCH --output=biolink_%j.txt
-
-module purge
-module add library/cuda/11.6.1/gcc.8.3.1
-
-nvcc --version
-nvidia-smi
-hostname
-echo "Cuda devices: $CUDA_VISIBLE_DEVICES"
-
-sh /exports/sascstudent/svanderwal2/programs/train_programs/monitor.sh &
-
-python3 /exports/sascstudent/svanderwal2/programs/running_programs/biolink/biolinkbert_run_fromhugging_30-11.py > biolink/biolink.txt
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c5737c2c214f3b37a97cb90a200a16e2ff7813c081669b01de607a067e6d0e1e
+size 519

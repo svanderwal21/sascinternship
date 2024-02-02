@@ -1,22 +1,3 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForQuestionAnswering, AutoModel
-import torch
-#BioMedLM
-tokenizer = AutoTokenizer.from_pretrained("BioMedLM")
-model = AutoModelForQuestionAnswering.from_pretrained("BioMedLM")
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-print(model.config._name_or_path)
-prompt = """
-fart
-"""
-model.to(device)
-encoded_input = tokenizer(prompt, return_tensors='pt').input_ids
-encoder_input = encoded_input.to(device)
-output_sequences = model.generate(
-        input_ids=encoded_input,
-        max_length=150,
-        temperature=0.1,
-        num_return_sequences=1,
-        do_sample=True)
-generated_text = tokenizer.decode(output_sequences[0], skip_special_tokens=True)
-print(generated_text)
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d4133d5a2e7591f602f0fee69f1c72bd3d97d22fc6947560fbd4d284d267fdc
+size 772

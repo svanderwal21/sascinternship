@@ -1,13 +1,3 @@
-from transformers import AutoTokenizer, AutoModel
-from sentence_transformers import SentenceTransformer, util
-sentences = ["Regulation of transcription by RNA polymerase II", "RNA polymerase II-mediated transcription"]
-
-
-
-model = SentenceTransformer('/exports/sascstudent/svanderwal2/programs/all-MiniLM-L6-v2-pubmed-full')
-#model = AutoModel.from_pretrained('/exports/sascstudent/svanderwal2/programs/SapBERT-from-PubMedBERT-fulltext')
-#/exports/sascstudent/svanderwal2/programs/all-MiniLM-L6-v2-pubmed-full
-
-embeddings = model.encode(sentences, convert_to_tensor=True)
-embeds = util.pytorch_cos_sim(embeddings[0], embeddings[1])
-print(embeds)
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f360d3122e25ff9870e45767612497d0320cadf03afae93cdacd8fe0377a8f3
+size 645

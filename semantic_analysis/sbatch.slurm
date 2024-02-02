@@ -1,22 +1,3 @@
-#!/bin/bash
-#
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --time=05:00
-#SBATCH --mem 16G
-
-
-module purge
-module add library/cuda/11.6.1/gcc.8.3.1
-
-nvcc --version
-nvidia-smi
-hostname
-echo "Cuda devices: $CUDA_VISIBLE_DEVICES"
-
-#python3 /exports/sascstudent/svanderwal2/programs/train_programs/monitor.py &
-
-python3 /exports/sascstudent/svanderwal2/programs/semantic_analysis/sss.py
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ca80e24c9b84cdefca16999189df2f3fe9e266ad7baf49677173046a300b4a2
+size 435

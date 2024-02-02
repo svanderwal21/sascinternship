@@ -1,6 +1,3 @@
-conda install -y -c conda-forge sagemaker
-conda install -y pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-conda install -y -c conda-forge transformers
-conda install -y cuda -c nvidia
-conda install -y -c conda-forge sentence-transformers
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1281567c03c47e232e25e034c0c1a4e099865d42152460686fa2661a8db9bee9
+size 261

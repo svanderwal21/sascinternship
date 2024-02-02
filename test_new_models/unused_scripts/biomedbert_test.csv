@@ -1,7 +1,3 @@
-['UBE2I', 'TIP12', 'MARCHF7'];['In cellular biology, the interaction between UBE2I, TIP12, MARCHF7 primarily contributes to autophagy ubiquitination sumoylation tumorigenesis stability.']
-['MUC21', 'MARCHF7', 'HLA-DRB4'];['In cellular biology, the interaction between MUC21, MARCHF7, HLA-DRB4 primarily contributes to apoptosis tumorigenesis metastasis adhesion inflammation.']
-['TRIP12', 'ZNF275', 'TTC21B', 'CELF1', 'UBE2I', 'BRPF1', 'OVOL3'];['In cellular biology, the interaction between TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3 primarily contributes to tumorigenesis apoptosis oncogenesis autophagy cytokinesis.']
-['TTC21B', 'HPS4', 'LOC100653049', 'CCDC39', 'HECW2', 'UBE2I'];['In cellular biology, the interaction between TTC21B, HPS4, LOC100653049, CCDC39, HECW2, UBE2I primarily contributes to tumorigenesis autophagy apoptosis cytokinesis ubiquitination.']
-['TTC21B', 'ZNF275', 'UBE2I', 'BRPF1', 'OVOL3'];['In cellular biology, the interaction between TTC21B, ZNF275, UBE2I, BRPF1, OVOL3 primarily contributes to tumorigenesis apoptosis transcription autophagy oncogenesis.']
-['VARS2', 'POLR2J3', 'SEM1', 'TRIP12', 'ZNF275', 'TTC21B', 'CELF1', 'UBE2I', 'BRPF1', 'OVOL3', 'MLYCD', 'PRPF18'];['In cellular biology, the interaction between VARS2, POLR2J3, SEM1, TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3, MLYCD, PRPF18 primarily contributes to tumorigenesis spermatogenesis transcription splicing oncogenesis.']
-['TRIP12', 'TTC21B', 'MYLIP', 'MARCHF7', 'LOC100653049', 'CELF1', 'SRGAP2B', 'CCDC39', 'HECW2', 'BRPF1', 'OVOL3'];['In cellular biology, the interaction between TRIP12, TTC21B, MYLIP, MARCHF7, LOC100653049, CELF1, SRGAP2B, CCDC39, HECW2, BRPF1, OVOL3 primarily contributes to tumorigenesis apoptosis cytokinesis emt autophagy.']
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8763ce52ee70c5fbc6e054734c4ec778afca958914522a33efe94790def60bf
+size 1774

@@ -1,17 +1,3 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
-
-# Load model and tokenizer
-model = AutoModelForCausalLM.from_pretrained("BioGPT-Large")
-tokenizer = AutoTokenizer.from_pretrained("BioGPT-Large")
-
-# Encode some input text
-inputs = tokenizer("Hello, I am", return_tensors="pt")
-
-# Perform inference
-nlp = pipeline("ner", model=model, tokenizer=tokenizer)
-example = "My name is Wolfgang and I live in Berlin"
-
-ner_results = nlp(example)
-print(ner_results)
-# Process the outputs as needed for your application
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:942994d7f5999c9d86029c2dccedbee68fa84c56234adee51cecf81036834b7e
+size 530

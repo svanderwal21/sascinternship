@@ -1,29 +1,3 @@
-from transformers import AutoTokenizer, AutoModel
-import torch
-from torch.nn.functional import cosine_similarity
-
-# Load the tokenizer and model
-model = "/exports/sascstudent/svanderwal2/programs/BioLinkBERT-base"
-
-tokenizer = AutoTokenizer.from_pretrained(model)
-model = AutoModel.from_pretrained(model)
-
-# Function to generate embeddings
-def get_embeddings(text):
-    inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
-    with torch.no_grad():
-        outputs = model(**inputs)
-    return outputs.last_hidden_state.mean(dim=1)  # Aggregate token embeddings
-
-# Texts to compare
-text1 = "Mitochondria"
-text2 = "Powerhouse of the cell"
-
-# Generate embeddings
-embeddings1 = get_embeddings(text1)
-embeddings2 = get_embeddings(text2)
-
-# Compute cosine similarity
-similarity = cosine_similarity(embeddings1, embeddings2)
-print(similarity)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:9499893164106f379568d7141387ba8eadb29b9b0218c238616e8d89a768c758
+size 878

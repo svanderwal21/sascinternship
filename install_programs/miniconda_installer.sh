@@ -1,6 +1,3 @@
-mkdir -p /exports/sascstudent/svanderwal2/miniconda3
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /exports/sascstudent/svanderwal2/miniconda3/miniconda.sh
-bash /exports/sascstudent/svanderwal2/miniconda3/miniconda.sh -b -u -p /exports/sascstudent/svanderwal2/miniconda3
-rm -rf /exports/sascstudent/svanderwal2/miniconda3/miniconda.sh
-/exports/sascstudent/svanderwal2/miniconda3/bin/conda init bash
-/exports/sascstudent/svanderwal2/miniconda3/bin/conda init zsh
+version https://git-lfs.github.com/spec/v1
+oid sha256:4161d70a6fd800dc98771401353a103b9c9b678e8b22d914b7324cf63eeaf98f
+size 494

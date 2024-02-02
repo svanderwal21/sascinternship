@@ -1,1 +1,3 @@
-slurmstepd: error: *** JOB 17130554 ON res-hpc-gpu09 CANCELLED AT 2023-12-13T17:44:07 DUE TO TIME LIMIT ***
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e6a7a96589020ee38c56869b3a36d86a6ddf2dc2468bc6ee10e5bcf06b3b848
+size 108

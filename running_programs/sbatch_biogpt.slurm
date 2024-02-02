@@ -1,31 +1,3 @@
-#!/bin/bash
-#
-#SBATCH --partition=highmemgpu
-#SBATCH --gres=gpu:1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --time=15:00
-#SBATCH --mem 16G
-#SBATCH --output gpt_%j.txt
-
-module purge
-module add library/cuda/11.6.1/gcc.8.3.1
-
-nvcc --version
-nvidia-smi
-hostname
-echo "Cuda devices: $CUDA_VISIBLE_DEVICES"
-
-echo "Script for generating these results: "
-cat /exports/sascstudent/svanderwal2/programs/running_programs/biogpt/biogpt_running_github.py
-
-sh /exports/sascstudent/svanderwal2/programs/train_programs/monitor.sh &
-
-echo "Results:"
-python3 /exports/sascstudent/svanderwal2/programs/running_programs/biogpt/biogpt_running_github.py
-
-echo "CPU Statistics:"
-cat /exports/sascstudent/svanderwal2/programs/train_programs/logs/cpu_usage.log
-echo "GPU Statistics"
-cat /exports/sascstudent/svanderwal2/programs/train_programs/logs/gpu_usage.log
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd316d39cd684f03c6a06e3ac4936a9fc59190b358b2f37fb12084ab5abad7b6
+size 850

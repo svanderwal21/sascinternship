@@ -1,30 +1,3 @@
-nvcc: NVIDIA (R) Cuda compiler driver
-Copyright (c) 2005-2023 NVIDIA Corporation
-Built on Fri_Nov__3_17:16:49_PDT_2023
-Cuda compilation tools, release 12.3, V12.3.103
-Build cuda_12.3.r12.3/compiler.33492891_0
-Fri Jan 19 03:38:59 2024       
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  GRID V100S-32Q      On   | 00000000:02:01.0 Off |                    0 |
-| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-res-hpc-gpu08.researchlumc.nl
-Cuda devices: 0
-Testing model: BioMedGPT-LM-7B
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:32<01:04, 32.17s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:01<00:30, 30.72s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:23<00:00, 26.56s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:23<00:00, 27.83s/it]
-slurmstepd: error: *** JOB 17390961 ON res-hpc-gpu08 CANCELLED AT 2024-01-19T05:38:05 DUE TO TIME LIMIT ***
+version https://git-lfs.github.com/spec/v1
+oid sha256:90a3ee3e6fef7129e123b3ade1ac259a0d9c9bd89e048f67fe234f9f80308a2e
+size 2366

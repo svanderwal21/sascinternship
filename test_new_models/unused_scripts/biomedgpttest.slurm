@@ -1,20 +1,3 @@
-#!/bin/bash
-#
-#SBATCH --partition=highmemgpu
-#SBATCH --gres=gpu:1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --time=1:59:00
-#SBATCH --mem 48G
-
-module purge
-#module add library/cuda/11.6.1/gcc.8.3.1
-
-nvcc --version
-nvidia-smi
-hostname
-echo "Cuda devices: $CUDA_VISIBLE_DEVICES"
-
-#sh /exports/sascstudent/svanderwal2/programs/train_programs/monitor.sh &
-
-python3 biomedtest.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:78c8e0d16334ab57a0391ac383c2f4cf362c180fe79cdba0a8487e7b6a9301d6
+size 385

@@ -1,0 +1,132 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Fri_Nov__3_17:16:49_PDT_2023
+Cuda compilation tools, release 12.3, V12.3.103
+Build cuda_12.3.r12.3/compiler.33492891_0
+Wed Dec 20 16:35:17 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:00.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu09.researchlumc.nl
+Cuda devices: 0
+Setting `pad_token_id` to `eos_token_id`:28895 for open-end generation.
+Prompt:
+
+Example:
+
+Human: UBE2I TRIP12 MARCHF7
+Assistant: UBE2I, TRIP12, and MARCHF7 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21 MARCHF7 HLA-DRB4
+Assistant:
+
+
+Testing model: BioGPT-Large-PubMedQA
+
+Example:
+
+Human: UBE2I TRIP12 MARCHF7
+Assistant: UBE2I, TRIP12, and MARCHF7 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21 MARCHF7 HLA-DRB4
+Assistant:
+
+ HLA-DRB4 is a class II MHC molecule that is involved in antigen presentation. (See p. 1). < / FREETEXT > < / PARAGRAPH > ▃
+
+
+Testing model: bloom-560m
+
+Example:
+
+Human: UBE2I TRIP12 MARCHF7
+Assistant: UBE2I, TRIP12, and MARCHF7 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21 MARCHF7 HLA-DRB4
+Assistant:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21, MUC21, and MUC21 are involved in the ubiquitin-proteas
+
+
+Testing model: BioMedLM
+
+Example:
+
+Human: UBE2I TRIP12 MARCHF7
+Assistant: UBE2I, TRIP12, and MARCHF7 are involved in the ubiquitin-proteasome system, specifically in ubiquitin ligase activity.
+Real Question:
+
+Human: MUC21 MARCHF7 HLA-DRB4
+Assistant:
+
+1.1  The Significance of the Hypereosinophilic Syndrome^(1)^
+===========================================================
+
+The hypereosinophilic syndrome (HES) is a rare condition characterized by persistent eosinophilia of more than 1500 cells/μL^(1,2)^ ([Figure 1](#f01){ref-type="fig"}) and clinical manifestations related to tissue damage^(1,2)^. In HES, eosinophilia does not result from the activation of the eosinophilopoietic pathway, and it is not related to allergic, parasitic, or neoplastic diseases.
+
+Figure 1Peripheral blood smear of a representative patient with HES showing increased eosinophilic leukocyte number with signs of eosinophil degranulation.
+
+The causes of eosinophilia are very diverse, including allergic diseases, infections, neoplasms, drugs (systemic corticosteroids, chemotherapy), and HES^(2,3)^. However, HES is diagnosed in more than 75% of the cases.^(3)^
+
+The symptoms of HES appear when the number of eosinophils reaches a certain level in various organs or tissues.^(4)^ Eosinophil-mediated tissue damage can occur in any organ, leading to damage of the cardiovascular, respiratory, and gastrointestinal systems, among other organs^(5)^ ([Figure 2](#f02){ref-type="fig"}). Of note, HES patients are frequently asymptomatic.^(4)^ The most common complaint is the presence of unexplained eosinophilia in the blood, which should indicate the need for hematological screening for HES.^(6)^
+
+Figure 2Peripheral blood smear of the bone marrow in a patient with HES showing myeloproliferative disorder with increased cellularity and eosinophilic leukocyte count.
+
+
+Testing model: BioMedGPT-LM-7B
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:50<01:41, 50.53s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:54<00:58, 58.25s/it]Loading checkpoint shards: 100%|██████████| 3/3 [02:35<00:00, 50.44s/it]Loading checkpoint shards: 100%|██████████| 3/3 [02:35<00:00, 51.78s/it]
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:381: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:386: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+slurmstepd: error: *** JOB 17169647 ON res-hpc-gpu09 CANCELLED AT 2023-12-20T19:34:16 DUE TO TIME LIMIT ***

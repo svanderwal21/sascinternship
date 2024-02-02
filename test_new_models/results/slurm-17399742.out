@@ -1,0 +1,200 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Thu_Feb_10_18:23:41_PST_2022
+Cuda compilation tools, release 11.6, V11.6.112
+Build cuda_11.6.r11.6/compiler.30978841_0
+Fri Jan 19 12:54:19 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu06.researchlumc.nl
+Cuda devices: 0
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:28895 for open-end generation.
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Prompt:
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+
+Be concise, do not use unnecessary words. Be specific; avoid overly general
+statements such as 'the proteins are involved in various cellular processes'
+Be factual; do not editorialize.
+For each important point, describe your reasoning and supporting information.
+
+Here are the interacting proteins: TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3
+Process 1:
+
+Testing model: BioGPT-Large-PubMedQA
+Cuda avail
+You are an efficient and insightful assistant to a molecular biologist Propose a brief name for the 10 most prominent biological processes performed by the system. Be concise, do not use unnecessary words. Be specific; avoid overly general statements such as' the proteins are involved in various cellular processes' Be factual; do not editorialize. For each important point, describe your reasoning and supporting information. Here are the interacting proteins: TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3 Process 1: mRNA processing; Process 2: Translation; Process 3: Ubiquitin-mediated proteolysis; Process 4: Cytoskeleton organization; Process 5: DNA damage response; Process 6: Transcription; Process 7: RNA degradation; Process 8: Chromatin modification; Process 9: Signal transduction; Process 1 0: Cell cycle regulation. Please click here to view a larger version of this figure. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > Figure 2. A schematic of the experimental design. The experimental design is to identify proteins that interact with a specific RNA. The experimental approach is to immunoprecipitate the RNA of interest, identify the co-immunoprecipitated proteins by mass spectrometry, and then validate the interaction by co-immunoprecipitation. The RNA of interest is the RNA of interest, which is the RNA of interest that is being tested. The protein of interest is the protein of interest, which is the protein of interest that is being tested. Please click here to view a larger version of this figure. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > Figure 3. A schematic of the data analysis pipeline. The data analysis pipeline is to identify proteins that interact with the RNA of interest, and then validate the interaction by co-immunoprecipitation. The data analysis pipeline is to identify proteins that are enriched in the immunoprecipitation relative to the input, and then validate the interaction by co-immunoprecipitation. The proteins that are enriched in the immunoprecipitation are the proteins that interact with the RNA of interest. Please click here to view a larger version of this figure. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > Figure 4. A schematic of the data interpretation. The proteins that are enriched in the immunoprecipitation are the proteins that interact with the RNA of interest. The proteins that are enriched in the RNA immunoprecipitation are the proteins that interact with the RNA of interest. The proteins that are enriched in the mass spectrometry
+
+
+Testing model: biogpt
+Cuda avail
+You are an efficient and insightful assistant to a molecular biologist Propose a brief name for the 10 most prominent biological processes performed by the system. Be concise, do not use unnecessary words. Be specific; avoid overly general statements such as' the proteins are involved in various cellular processes' Be factual; do not editorialize. For each important point, describe your reasoning and supporting information. Here are the interacting proteins: TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3 Process 1: 'the proteins are involved in various cellular processes'.
+
+
+Testing model: BioMedLM
+Cuda avail
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+
+Be concise, do not use unnecessary words. Be specific; avoid overly general
+statements such as 'the proteins are involved in various cellular processes'
+Be factual; do not editorialize.
+For each important point, describe your reasoning and supporting information.
+
+Here are the interacting proteins: TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3
+Process 1:
+
+These proteins are involved in various cellular processes.
+
+Process 2:
+
+These proteins are involved in various cellular processes.
+
+Process 3:
+
+These proteins are involved in various cellular processes.
+
+Process 4:
+
+These proteins are involved in various cellular processes.
+
+Process 5:
+
+These proteins are involved in various cellular processes.
+
+Process 6:
+
+These proteins are involved in various cellular processes.
+
+Process 7:
+
+These proteins are involved in various cellular processes.
+
+Process 8:
+
+These proteins are involved in various cellular processes.
+
+Process 9:
+
+These proteins are involved in various cellular processes.
+
+Process 10:
+
+These proteins are involved in various cellular processes.
+
+Process 11:
+
+These proteins are involved in various cellular processes.
+
+Process 12:
+
+These proteins are involved in various cellular processes.
+
+Process 13:
+
+These proteins are involved in various cellular processes.
+
+Process 14:
+
+These proteins are involved in various cellular processes.
+
+Process 15:
+
+These proteins are involved in various cellular processes.
+
+Process 16:
+
+These proteins are involved in various cellular processes.
+
+Process 17:
+
+These proteins are involved in various cellular processes.
+
+Process 18:
+
+These proteins are involved in various cellular processes.
+
+Process 19:
+
+These proteins are involved in various cellular processes.
+
+Process 20:
+
+These proteins are involved in various cellular processes.
+
+Process 21:
+
+
+
+Testing model: BioGPT-Large
+Cuda avail
+You are an efficient and insightful assistant to a molecular biologist Propose a brief name for the 10 most prominent biological processes performed by the system. Be concise, do not use unnecessary words. Be specific; avoid overly general statements such as' the proteins are involved in various cellular processes' Be factual; do not editorialize. For each important point, describe your reasoning and supporting information. Here are the interacting proteins: TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3 Process 1: RNA splicing. Process 2: RNA splicing. Process 3: RNA splicing. Process 4: RNA splicing. Process 5: RNA splicing. Process 6: RNA splicing. Process 7: RNA splicing. Process 8: RNA splicing. Process 9: RNA splicing. Process 1 0: RNA splicing. < / FREETEXT > < / ABSTRACT > ▃
+
+
+Testing model: BioMedGPT-LM-7B
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:08<00:16,  8.19s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:16<00:08,  8.20s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:22<00:00,  7.16s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:22<00:00,  7.44s/it]
+Cuda avail
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+
+Be concise, do not use unnecessary words. Be specific; avoid overly general
+statements such as 'the proteins are involved in various cellular processes'
+Be factual; do not editorialize.
+For each important point, describe your reasoning and supporting information.
+
+Here are the interacting proteins: TRIP12, ZNF275, TTC21B, CELF1, UBE2I, BRPF1, OVOL3
+Process 1:
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+Process 2:
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+Process 3:
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+Process 4:
+The proteins are involved in the regulation of transcription.
+The proteins are involved in the regulation of transcription.
+
+
+

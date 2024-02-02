@@ -1,0 +1,43 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Fri_Nov__3_17:16:49_PDT_2023
+Cuda compilation tools, release 12.3, V12.3.103
+Build cuda_12.3.r12.3/compiler.33492891_0
+Tue Jan  9 13:42:50 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:00.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu06.researchlumc.nl
+Cuda devices: 0
+Prompt:
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: UBE2I TRIP12 MARCHF7
+Process 1:
+
+Testing model: BioMedGPT-LM-7B
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:49<01:39, 49.74s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:48<00:54, 54.81s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:54<00:00, 32.80s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:54<00:00, 38.23s/it]
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:381: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:386: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+slurmstepd: error: *** JOB 17302188 ON res-hpc-gpu06 CANCELLED AT 2024-01-09T17:42:14 DUE TO TIME LIMIT ***

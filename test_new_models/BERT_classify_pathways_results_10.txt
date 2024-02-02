@@ -1,0 +1,11 @@
+MUC21 MARCHF7 HLA-DRB4
+Predicted label 0: 2q37 copy number variation syndrome
+Predicted label 1: 2q37 copy number variation syndrome
+Predicted label 2: 2q37 copy number variation syndrome
+Predicted label 3: 2q37 copy number variation syndrome
+Predicted label 4: 2q37 copy number variation syndrome
+Predicted label 5: 2q37 copy number variation syndrome
+Predicted label 6: 2q37 copy number variation syndrome
+Predicted label 7: 2q37 copy number variation syndrome
+Predicted label 8: 2q37 copy number variation syndrome
+Predicted label 9: 2q37 copy number variation syndrome

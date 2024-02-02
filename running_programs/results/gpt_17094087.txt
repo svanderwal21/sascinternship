@@ -1,0 +1,483 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Thu_Feb_10_18:23:41_PST_2022
+Cuda compilation tools, release 11.6, V11.6.112
+Build cuda_11.6.r11.6/compiler.30978841_0
+Thu Dec  7 16:31:21 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100S-32Q      On   | 00000000:02:01.0 Off |                    0 |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu08.researchlumc.nl
+Cuda devices: 0
+Script for generating these results: 
+#from github of BioGPT, HuggingFace transformers library, for text generation
+from transformers import pipeline, set_seed
+from transformers import BioGptTokenizer, BioGptForCausalLM
+model = BioGptForCausalLM.from_pretrained("/exports/sascstudent/svanderwal2/programs/BioGPT-Large", cache_dir="/exports/sacstudent/svanderwal2/")
+tokenizer = BioGptTokenizer.from_pretrained("/exports/sascstudent/svanderwal2/programs/BioGPT-Large", cache_dir="/exports/sascstudent/svanderwal2")
+
+#Prompt is GUI1
+input = """You are an efficient and insightful assistant to a molecular biologist
+
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+
+One process can have multiple genes
+
+Be concise; do not use unnecessary words. Be specific; avoid overly general
+statements such as 'the proteins are involved in various cellular processes'
+
+Formulate like this:
+
+1. <process 1: genes present>
+2. <process 2: genes present>
+
+etc.
+
+Here are the interacting proteins: UBE2I TRIP12 MARCHF7"""
+
+input_engineered = """
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: UBE2I TRIP12 MARCHF7
+Process 1: 
+"""
+
+input_eng_2 = """
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+For every process give a reasoning and give which genes are present in the process
+Here are the interacting proteins: UBE2I TRIP12 MARCHF7
+
+"""
+generator = pipeline('text-generation', model=model, tokenizer=tokenizer)
+#set_seed(42)
+gen = generator(input_engineered, max_length=800, num_return_sequences=1, do_sample=True)
+for iter in gen:
+        print(iter["generated_text"])
+        print("------------------------------------------")
+
+Results:
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: UBE2I TRIP12 MARCHF7
+Process 1: 
+ Ubiquitin-Dependent Degradation of Proteins Process 2: DNA Recombination-Recombination Repair Process 3: Nucleotide Excision Repair Process 4: DNA Strand Breaks Process 5: Replication-DNA Repair Process 6: Transcription-RNA Polymerase Reversion Process 7: Chromatin Remodeling Process 8: Protein Degradation Process 9: DNA Repair Process 1 0: mRNA splicing Process < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > 1. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > Figure 3: < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > The 10 most prominent processes performed by the system. The protein list is in the upper left of the table. The processes are connected in the form of a node-link diagram between two nodes, such that a biological process is connected to (i) at least one protein involved in that process, and (ii) at least one protein in that protein involved process, etc. A link also appears between the corresponding proteins in the two connected nodes. Nodes (or processes) are colored according to their GO ID and GO description, and link types: (a) edges are drawn between the corresponding proteins in the corresponding nodes; edges are drawn between only two nodes as in. (b) The same color and the same edge type is used, and also for the links between the corresponding nodes; (c) edges are drawn between all proteins involved in the corresponding biological process. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > 2. 1.4: How to use DAVID in a specific biological process? < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > The aim of DAVID is to provide a functional annotation tool that is able to quickly identify groups of genes within large lists. DAVID performs this task through the use of a web-based platform where genes are classified using an algorithm. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > We have found that DAVID is more appropriate in a functional annotation process than in a biological process description. As long as the genes included in a functional annotation are manually associated with specific biological process, we need to know the genes assigned or retrieved from the source database. For example, proteins whose name is listed in the Gene bank (eg. MYH9) are automatically assigned by DAVID. Even if the genes are submitted in a non automatic way, we know that their presence in a specific pathway is manually made by the scientific community. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > This section presents the use of DAVID in both functional annotation category and biological process classification. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > A description of the steps taken to analyze a given list of genes using DAVID is given in Box 1. This process is divided into the following steps: < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Genes selection and organization and < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Sublist selection and < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Functional annotation < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Protein selection and organization. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Gene selection and < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Sublist selection and < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > -Biological process characterization. < / FREETEXT > < / PARAGRAPH > ▃ < PARAGRAPH > < FREETEXT > 2. 1.1: The analysis and the sublists analysis < / FREETEXT > < / PARAGRAPH
+------------------------------------------
+CPU Statistics:
+PID: porcess id
+PR: process priority, the lower, the higher priority
+VIRT: total virt memory
+USER: user name of owner task
+RES: how much phyiscal RAM is used, in kb
+TIME+: CPU Time
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 282086 svander+  20   0   30836  14376   5932 R  12.5   0.0   0:00.05 python3
+ 282090 svander+  20   0   62668   4184   3260 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282091 svander+  20   0    9220    532    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 3391788 351864 148876 R  20.0   0.2   0:01.49 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282094 svander+  20   0   62668   4176   3248 R   0.0   0.0   0:00.00 top
+ 282095 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 3972372 926072 153940 R   6.7   0.5   0:02.61 python3
+ 282234 svander+  20   0   62668   4184   3256 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282235 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282086 svander+  20   0 4733092   1.6g 153944 D   0.0   0.8   0:03.13 python3
+ 282567 svander+  20   0   62668   4224   3296 R   0.0   0.0   0:00.00 top
+ 282568 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 5814156   2.6g 153944 D  12.5   1.4   0:03.91 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282697 svander+  20   0   62668   4332   3404 R   0.0   0.0   0:00.00 top
+ 282698 svander+  20   0    9220    512    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9939672   6.4g 154652 R  93.8   3.4   0:06.02 python3
+ 282702 svander+  20   0   62668   4184   3260 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282703 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   14.8g  11.9g 156084 R  93.8   6.3   0:16.28 python3
+ 282706 svander+  20   0   62668   4180   3256 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3112   2764 S   0.0   0.0   0:00.00 sh
+ 282707 svander+  20   0    9220    500    432 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9724996   6.4g 168692 R  93.8   3.4   0:25.45 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 282714 svander+  20   0   62668   4192   3268 R   0.0   0.0   0:00.00 top
+ 282715 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9755608   6.4g 168692 R  93.8   3.4   0:35.67 python3
+ 282921 svander+  20   0   62668   4188   3260 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 282922 svander+  20   0    9220    536    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9770960   6.4g 168692 R  94.1   3.4   0:45.94 python3
+ 283107 svander+  20   0   62668   4332   3404 R   5.9   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283108 svander+  20   0    9220    528    456 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9799640   6.4g 168692 R 100.0   3.4   0:56.15 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283111 svander+  20   0   62668   4268   3340 R   0.0   0.0   0:00.00 top
+ 283112 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9826636   6.5g 168692 R  93.8   3.4   1:06.36 python3
+ 283117 svander+  20   0   62668   4236   3308 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283118 svander+  20   0    9220    536    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9849716   6.5g 168692 R  93.8   3.4   1:16.71 python3
+ 283121 svander+  20   0   62668   4184   3260 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283122 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9873260   6.5g 168692 R  93.8   3.4   1:26.94 python3
+ 283261 svander+  20   0   62668   4324   3400 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283262 svander+  20   0    9220    532    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9904152   6.5g 168692 R  93.8   3.5   1:37.16 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283336 svander+  20   0   62668   4248   3320 R   0.0   0.0   0:00.00 top
+ 283337 svander+  20   0    9220    524    456 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9921832   6.5g 168692 R  87.5   3.5   1:47.38 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283713 svander+  20   0   62668   4200   3272 R   0.0   0.0   0:00.00 top
+ 283714 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9944328   6.6g 168692 R  93.8   3.5   1:57.59 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.00 sh
+ 283717 svander+  20   0   62668   4116   3196 R   0.0   0.0   0:00.00 top
+ 283718 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9972024   6.6g 168692 R  93.8   3.5   2:07.81 python3
+ 283722 svander+  20   0   62668   4308   3388 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.01 sh
+ 283723 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9986336   6.6g 168692 R  93.8   3.5   2:18.18 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.01 sh
+ 283726 svander+  20   0   62668   4308   3388 R   0.0   0.0   0:00.00 top
+ 283727 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9777.4m   6.6g 168692 R 100.0   3.5   2:28.41 python3
+ 283866 svander+  20   0   62668   4168   3248 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 283867 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9790.1m   6.6g 168692 R  93.8   3.5   2:38.62 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 283997 svander+  20   0   62668   4188   3264 R   0.0   0.0   0:00.00 top
+ 283998 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9815.3m   6.7g 168692 R  93.8   3.5   2:48.84 python3
+ 284128 svander+  20   0   62668   4324   3404 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284129 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9833.9m   6.7g 168692 R  93.8   3.5   2:59.07 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284133 svander+  20   0   62668   4232   3312 R   0.0   0.0   0:00.00 top
+ 284134 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9838.9m   6.7g 168692 R  88.2   3.5   3:09.29 python3
+ 284137 svander+  20   0   62668   4252   3332 R   5.9   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284138 svander+  20   0    9220    532    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9883.7m   6.7g 168692 R 100.0   3.6   3:19.64 python3
+ 284141 svander+  20   0   62668   4120   3196 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284142 svander+  20   0    9220    528    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9901.6m   6.7g 168692 R  94.1   3.6   3:29.87 python3
+ 284281 svander+  20   0   62668   4184   3264 R   5.9   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284282 svander+  20   0    9220    500    432 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9930.5m   6.8g 168692 R  93.8   3.6   3:40.08 python3
+ 284644 svander+  20   0   62668   4216   3296 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284645 svander+  20   0    9220    508    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9947.7m   6.8g 168692 R  93.8   3.6   3:50.30 python3
+ 284775 svander+  20   0   62668   4216   3292 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284776 svander+  20   0    9220    504    436 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9963.2m   6.8g 168692 R  87.5   3.6   4:00.52 python3
+ 284780 svander+  20   0   62668   4180   3260 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3116   2764 S   0.0   0.0   0:00.02 sh
+ 284781 svander+  20   0    9220    528    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9983.2m   6.8g 168692 R  87.5   3.6   4:10.75 python3
+ 284784 svander+  20   0   62668   4108   3188 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.02 sh
+ 284785 svander+  20   0    9220    524    456 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0 9995.2m   6.8g 168692 R  88.9   3.6   4:21.12 python3
+ 284788 svander+  20   0   62668   4184   3268 R   5.6   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.02 sh
+ 284789 svander+  20   0    9220    508    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.8g   6.9g 168692 R  93.8   3.6   4:31.35 python3
+ 284928 svander+  20   0   62668   4212   3296 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.02 sh
+ 284929 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.8g   6.9g 168692 R 100.0   3.7   4:41.56 python3
+ 285058 svander+  20   0   62668   4308   3392 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.02 sh
+ 285059 svander+  20   0    9220    476    408 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.8g   6.9g 168692 R  93.8   3.7   4:51.77 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285188 svander+  20   0   62668   4168   3252 R   0.0   0.0   0:00.00 top
+ 285189 svander+  20   0    9220    508    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.9g   6.9g 168692 R 100.0   3.7   5:01.97 python3
+ 285193 svander+  20   0   62668   4184   3268 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285194 svander+  20   0    9220    476    408 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.9g   7.0g 168692 R 100.0   3.7   5:12.19 python3
+ 285197 svander+  20   0   62668   4184   3264 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285198 svander+  20   0    9220    532    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.9g   7.0g 168692 R  93.8   3.7   5:22.54 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285206 svander+  20   0   62668   4140   3220 R   0.0   0.0   0:00.00 top
+ 285207 svander+  20   0    9220    508    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.9g   7.0g 168692 R  93.3   3.7   5:32.74 python3
+ 285444 svander+  20   0   62668   4236   3316 R   6.7   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285445 svander+  20   0    9220    512    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0    9.9g   7.0g 168692 R 100.0   3.7   5:42.96 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285821 svander+  20   0   62668   4212   3296 R   0.0   0.0   0:00.00 top
+ 285822 svander+  20   0    9220    484    412 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.0g   7.0g 168692 R  88.2   3.7   5:53.19 python3
+ 285825 svander+  20   0   62668   4312   3396 R   5.9   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285826 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.0g   7.1g 168692 R  93.8   3.7   6:03.41 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285830 svander+  20   0   62668   4332   3420 R   0.0   0.0   0:00.00 top
+ 285831 svander+  20   0    9220    504    432 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.0g   7.1g 168692 R  93.8   3.8   6:13.62 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285834 svander+  20   0   62668   4308   3392 R   0.0   0.0   0:00.00 top
+ 285835 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.0g   7.1g 168692 R  93.8   3.8   6:23.99 python3
+ 285973 svander+  20   0   62668   4296   3384 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 285974 svander+  20   0    9220    524    456 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.0g   7.1g 168692 R 100.0   3.8   6:34.21 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 286048 svander+  20   0   62668   4320   3404 R   0.0   0.0   0:00.00 top
+ 286049 svander+  20   0    9220    492    424 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.1g   7.2g 168692 R  93.8   3.8   6:44.42 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.04 sh
+ 286235 svander+  20   0   62668   4296   3380 R   0.0   0.0   0:00.00 top
+ 286236 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.1g   7.2g 168692 R  87.5   3.8   6:54.65 python3
+ 286239 svander+  20   0   62668   4252   3336 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286240 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.1g   7.2g 168692 R 100.0   3.8   7:04.89 python3
+ 286244 svander+  20   0   62668   4168   3256 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286245 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.1g   7.2g 168692 R  93.8   3.8   7:15.08 python3
+ 286248 svander+  20   0   62668   4220   3308 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286249 svander+  20   0    9220    536    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.2g   7.2g 168692 R  93.8   3.8   7:25.42 python3
+ 286388 svander+  20   0   62668   4244   3332 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286389 svander+  20   0    9220    536    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.2g   7.3g 168692 R 100.0   3.8   7:35.66 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286615 svander+  20   0   62668   4184   3272 R   0.0   0.0   0:00.00 top
+ 286616 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.2g   7.3g 168692 R 100.0   3.9   7:45.87 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286934 svander+  20   0   62668   4172   3264 R   0.0   0.0   0:00.00 top
+ 286935 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.2g   7.3g 168692 R 100.0   3.9   7:56.10 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286938 svander+  20   0   62668   4296   3384 R   0.0   0.0   0:00.00 top
+ 286939 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.2g   7.3g 168692 R  93.8   3.9   8:06.33 python3
+ 286943 svander+  20   0   62668   4236   3328 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286944 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.3g   7.3g 168692 R  93.8   3.9   8:16.54 python3
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 286947 svander+  20   0   62668   4168   3260 R   0.0   0.0   0:00.00 top
+ 286948 svander+  20   0    9220    516    448 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282086 svander+  20   0   10.3g   7.4g 168692 R  93.8   3.9   8:26.89 python3
+ 287087 svander+  20   0   62668   4244   3336 R   6.2   0.0   0:00.01 top
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 287088 svander+  20   0    9220    504    436 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 282063 svander+  20   0   12868   3212   2812 S   0.0   0.0   0:00.00 slurm_s+
+ 282085 svander+  20   0   12872   3120   2764 S   0.0   0.0   0:00.05 sh
+ 282086 svander+  20   0 3592652 594592 205840 D   0.0   0.3   8:28.01 python3
+ 287225 svander+  20   0   62668   4292   3384 R   0.0   0.0   0:00.00 top
+ 287226 svander+  20   0    9220    500    432 S   0.0   0.0   0:00.00 grep
+#new iteration
+GPU Statistics
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0

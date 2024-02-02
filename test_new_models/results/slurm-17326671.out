@@ -1,0 +1,79 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Fri_Nov__3_17:16:49_PDT_2023
+Cuda compilation tools, release 12.3, V12.3.103
+Build cuda_12.3.r12.3/compiler.33492891_0
+Fri Jan 12 09:38:50 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100S-32Q      On   | 00000000:02:01.0 Off |                    0 |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu07.researchlumc.nl
+Cuda devices: 0
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:28895 for open-end generation.
+/exports/sascstudent/svanderwal2/miniconda3/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Prompt:
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: MUC21 MARCHF7 HLA-DRB4
+Process 1:
+
+Testing model: BioGPT-Large-PubMedQA
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: MUC21 MARCHF7 HLA-DRB4
+Process 1:
+ DNA repair and replication; 2--Protein synthesis; 3--Signal transduction; 4--Metabolism; 5--Cell cycle; 6--Cell structure; 7--Gene expression; 8--Development; 9--Immune response; 1 0--Cell death; 1--1 4 Transport; 1--1 5 Other processes. < / FREETEXT > < / ABSTRACT > ▃
+
+
+Testing model: biogpt
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: MUC21 MARCHF7 HLA-DRB4
+Process 1:
+ MUC21 MARCHF7 HLA-DRB4 Process 2: MUC21 MARCHF7 HLA-DRB4 Process 3: MUC21 MARCHF7 HLA-DRB4 Process 4: MUC21 MARCHF7 HLA-DRB4 Process 5: MUC21 MARCHF7 HLA-DRB4 Process 6: MUC21 MARCHF7 HLA-DRB4 Process 7: MUC21 MARCHF7 HLA-DRB4 Process 8: MUC21 MARCHF7 HLA-DRB4 Process 9: MUC21 MARCHF7 HLA-DRB4 Process 10: MUC21 MARCHF7 HLA-DRB4 Process 11: MUC21 MARCHF7 HLA-DRB4 Process 12: MUC21 MARCHF7 HLA-DRB4 Process 13: MUC21 MARCHF7 HLA-DRB4 Process 14: MUC21 MARCHF7 HLA-DRB4 Process 15: MUC21 MARCHF7 HLA-DRB4 Process 16: MUC21 MARCHF7 HLA-DRB4 Process 17: MUC21 MARCHF7 HLA-DRB4 Process 18: MUC21 MARCHF7 HLA-DRB4 Process 19: MUC21 MARCHF7 HLA-DRB4 Process 20: MUC21 MARCHF7 HLA-DRB4 Process 20: MUC21 MARCHF7 HLA-DRB4 Process 21: MUC21 MARCHF7 HLA-DRB4 Process 21: MUC21 MARCHF7 HLA-DRB4 Process 21: MUC21 MARCHF7 HLA-DRB4 Process 21: MUC21 MARCHF7 HLA-DRB4 Process 22: MUC21 MARCHF7 HLA-DRB4 Process 23: MUC21 MARCHF7 HLA-DRB4 Process 24: MUC21 MARCHF7 HLA-DRB4 Process 25: MUC21 MARCHF7 HLA-DRB4 Process 25: MUC21 MARCHF7 HLA-DRB4 Process 26: MUC21 MARCHF7 HLA-DRB4 Process 25: MUC21 MARCHF7 HLA-DRB4 Process 28: MUC21 MARCHF7 HLA-DRB4 Process 29: MUC21 MARCHF7 HLA-DRB4 Process 30: MUC21 MARCHF7 HLA
+
+
+Testing model: BioMedLM
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: MUC21 MARCHF7 HLA-DRB4
+Process 1:
+  Mucin 21 (MUC21) is a membrane-bound O-glycosylated protein that binds hyaluronan. MUC21 also binds to the C1q component of complement and mediates complement activation. HLA-DRB4 is an MHC class II molecule; it binds to a peptide derived from MUC21.
+  Process 2:
+  MARCH7 (MARCH7), which is also known as Rma1 or RFP, is an integral endoplasmic reticulum (ER) membrane protein that belongs to the RING finger protein family. MARCH7 is a ubiquitin ligase that mediates the ubiquitination and degradation of a range of membrane proteins, as well as several transmembrane receptors and transporters. In some cases, this leads to changes in the surface expression of cell molecules, such as histocompatibility complex (MHC) class II, costimulatory molecules and receptors linked to cell migration. HLA-DR is a major histocompatibility class II, and MARCH7 reduces the surface expression of HLA-DR molecules.
+  Process 3:
+  An intronic repeat sequence, P1, within a human mucin (MUC1) gene shows a high frequency of polymorphisms and can be used as a tool for the detection of DNA sequence rearrangements in malignant tissues. Polymorphisms have been recorded at 11 of 13 sites within the promoter region of the MUC1 gene, including a polymorphism in a region with homology to the mouse mammary tumour virus (MMTV) enhancer. The MMTV enhancer is a sequence that confers strong epithelial cell specificity and, due to its frequent association with breast and ovarian cancer, has been investigated as a candidate sequence for breast and epithelial cell tumours. The MMTV enhancer binds three cellular proteins, BTEB1, BTEB2 and BTEB3. The binding of these three proteins depends on the base sequence of the enhancer; in particular, the binding of BTEB1 and BTEB2 depends on the presence of three GC-containing DNA motifs (GC-boxes). The GC-boxes are able to bind cellular transcriptional regulators (Sp1/Sp3 proteins, ETS and GAGA factors), suggesting that such binding may influence the expression of the M
+
+
+Testing model: BioGPT-Large
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+Here are the interacting proteins: MUC21 MARCHF7 HLA-DRB4
+Process 1:
+ DNA repair Process 2: RNA processing Process 3: Protein folding Process 4: Protein transport Process 5: Protein degradation Process 6: Cell cycle Process 7: Cell division Process 8: Cell growth Process 9: Cell motility Process 1 0: Cell adhesion Process 1 1: Cell differentiation Process 1 2: Cell motility Process 1 3: Cell adhesion Process 1 4: Cell differentiation Process 1 5: Cell growth Process 1 6: Cell cycle Process 1 7: Cell death Process 1 8: Cell death Process 1 9: Cell growth Process 2 0: Cell death Process 2 1: Cell death Process 2 2: Cell death Process 2 3: Cell death Process 2 4: Cell death Process 2 5: Cell death Process 2 6: Cell death Process 2 7: Cell death Process 2 8: Cell death Process 2 9: Cell death Process 3 0: Cell death Process 3 1: Cell death Process 3 2: Cell death Process 3 3: Cell death Process 3 4: Cell death Process 3 5: Cell death Process 3 6: Cell death Process 3 7: Cell death Process 3 8: Cell death Process 3 9: Cell death Process 4 0: Cell death Process 4 1: Cell death Process 4 2: Cell death Process 4 3: Cell death Process 4 4: Cell death Process 4 5: Cell death Process 4 6: Cell death Process 4 7: Cell death Process 4 8: Cell death Process 4 9: Cell death Process 5 0: Cell death Process 5 1: Cell death Process 5 2: Cell death Process 5 3: Cell death Process 5 4: Cell death Process 5 5: Cell death Process 5 6: Cell death Process 5 7: Cell death Process 5 8: Cell death Process 5 9: Cell death Process 6 0: Cell death Process 6 1: Cell death Process 6 2: Cell death Process 6 3: Cell death Process 6 4: Cell death Process 6 5: Cell death Process 6 6: Cell death Process 6 7: Cell death Process 6 8: Cell death Process 6 9: Cell death Process 7 0: Cell death Process 7 1: Cell death Process 7 2: Cell death Process 7 3: Cell death Process 7 4: Cell death Process 7 5: Cell death Process 7 6: Cell death Process 7 7: Cell death
+
+

@@ -1,0 +1,70 @@
+"1. Protein ubiquitination: TRIP12, HECW2, UBE2I
+2. Cilia assembly: TTC21B, CCDC39
+3. Lipid metabolism: MYLIP, MLYCD
+4. Protein transport: MARCHF7, SEM1
+5. RNA processing: CELF1, PRPF18, POLR2J3
+6. Actin cytoskeleton regulation: SRGAP2B
+7. Chromatin remodeling: BRPF1
+8. Transcription regulation: OVOL3, ZNF275
+9. Aminoacyl-tRNA synthesis: VARS2
+10. Uncharacterized function: LOC100653049"
+"1. Mucin biosynthesis and secretion: MUC21
+2. Epithelial cell differentiation: MUC21
+3. E3 ubiquitin ligase activity and protein degradation: MARCHF7
+4. Negative regulation of immune receptor signaling: MARCHF7
+5. Antigen presentation and T-cell receptor signaling: HLA-DRB4, MARCHF7
+6. Adaptive immune response regulation: HLA-DRB4
+7. Lysosomal protein degradation: MARCHF7
+8. Immune system process modulation: HLA-DRB4, MARCHF7
+9. Cell surface receptor signaling: HLA-DRB4
+10. Protein ubiquitination: MARCHF7"
+"1. Protein ubiquitination and degradation: TRIP12, UBE2I
+2. DNA binding and transcriptional regulation: ZNF275, OVOL3
+3. Ciliary assembly and function: TTC21B
+4. RNA binding and splicing regulation: CELF1
+5. Histone acetylation and chromatin remodeling: BRPF1
+6. Ubiquitin-proteasome pathway regulation: TRIP12
+7. Transcriptional repression: OVOL3
+8. RNA metabolic processes: CELF1
+9. Ubiquitin-conjugating enzyme activity: UBE2I
+10. Regulation of epithelial-mesenchymal transition (EMT): OVOL3"
+"1. Ciliogenesis: TTC21B, CCDC39
+2. Vesicle biogenesis: HPS4
+3. Unknown function: LOC100653049
+4. Ubiquitin-proteasome pathway: UBE2I, HECW2
+5. Neural development: HECW2
+6. Intracellular transport: TTC21B
+7. Ciliary dynein arm assembly: CCDC39
+8. Hermansky-Pudlak syndrome pathogenesis: HPS4
+9. Protein ubiquitination: UBE2I, HECW2
+10. DNA damage response: UBE2I"
+"1. Ciliary biogenesis: TTC21B
+2. DNA binding & transcriptional regulation: ZNF275
+3. Protein ubiquitination: UBE2I
+4. Chromatin modification and histone acetylation: BRPF1
+5. Epithelial-to-mesenchymal transition (EMT) suppression: OVOL3
+6. RNA polymerase II-mediated transcription: UBE2I
+7. Intracellular protein transport: TTC21B
+8. Keratinocyte differentiation: OVOL3
+9. SUMOylation process: UBE2I
+10. Zinc finger protein-mediated processes: ZNF275"
+"1. RNA Transcription: POLR2J3, OVOL3
+2. RNA Processing: CELF1, PRPF18
+3. Protein Ubiquitination: TRIP12, UBE2I
+4. Proteasomal Degradation: SEM1
+5. Chromatin Modification: BRPF1
+6. Zinc-Finger DNA Binding: ZNF275
+7. Mitochondrial Translation: VARS2
+8. Fatty Acid Metabolism: MLYCD
+9. Intraflagellar Transport: TTC21B
+10. Protein SUMOylation: UBE2I"
+"1. Ubiquitin-mediated proteolysis: TRIP12, HECW2
+2. Cilium assembly and movement: TTC21B, CCDC39
+3. Cholesterol and lipid metabolism: MYLIP
+4. Protein trafficking and turnover: MARCHF7
+5. RNA binding and processing: CELF1
+6. Neuronal morphogenesis: SRGAP2B
+7. Chromatin modification: BRPF1
+8. Transcriptional regulation: OVOL3
+9. Potential pseudogene or unknown function: LOC100653049
+10. Cellular signal modulation: Other genes may have roles in signal modulation, but without specifics, this remains an assumption."

@@ -1,0 +1,159 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Thu_Feb_10_18:23:41_PST_2022
+Cuda compilation tools, release 11.6, V11.6.112
+Build cuda_11.6.r11.6/compiler.30978841_0
+Fri Jan 19 11:00:55 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100S-32Q      On   | 00000000:02:01.0 Off |                    0 |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu08.researchlumc.nl
+Cuda devices: 0
+/exports/sascstudent/svanderwal2/miniconda3/envs/run_models_sasc/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:28895 for open-end generation.
+/exports/sascstudent/svanderwal2/miniconda3/envs/run_models_sasc/lib/python3.11/site-packages/transformers/generation/utils.py:1473: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Prompt:
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+
+Be concise, do not use unnecessary words. Be specific; avoid overly general
+statements such as 'the proteins are involved in various cellular processes'
+Be factual; do not editorialize.
+For each important point, describe your reasoning and supporting information.
+
+Here are the interacting proteins: UBE2I, TIP12, MARCHF7
+Process 1:
+
+Testing model: BioGPT-Large-PubMedQA
+Cuda avail
+You are an efficient and insightful assistant to a molecular biologist Propose a brief name for the 10 most prominent biological processes performed by the system. Be concise, do not use unnecessary words. Be specific; avoid overly general statements such as' the proteins are involved in various cellular processes' Be factual; do not editorialize. For each important point, describe your reasoning and supporting information. Here are the interacting proteins: UBE2I, TIP12, MARCHF7 Process 1: Ubiquitin-dependent protein degradation. 2UBE2I, a ubiquitin-conjugating enzyme, is responsible for the transfer of ubiquitin to target proteins. TIP12, a tetratricopeptide repeat-containing protein, is involved in the regulation of the anaphase-promoting complex / cyclosome. MARCHF7, a membrane-associated RING-CH finger ubiquitin ligase, is involved in the regulation of the cell cycle. Process 2: DNA replication. TIP12, a DNA replication protein, is involved in the loading of the minichromosome maintenance complex onto chromatin. Process 3: RNA processing. MARCHF7, a RNA helicase, is involved in the regulation of RNA splicing. Process 4: Protein folding. TIP12, a molecular chaperone, is involved in the proper folding of newly synthesized proteins. Process 5: DNA repair. MARCHF7, a ubiquitin ligase, is involved in the repair of DNA damage. Process 6: Signal transduction. TIP12, a molecular chaperone, is involved in the proper folding of G protein-coupled receptors. Process 7: Transcription. TIP12, a molecular chaperone, is involved in the regulation of transcription. Process 8: Cell cycle. MARCHF7, a ubiquitin ligase, is involved in the regulation of the cell cycle. Process 9: Apoptosis. TIP12, a molecular chaperone, is involved in the regulation of apoptosis. Process 1 0: Cancer. TIP12, a molecular chaperone, is involved in the regulation of cancer. < / FREETEXT > < / PARAGRAPH > ▃
+
+
+Testing model: biogpt
+Cuda avail
+You are an efficient and insightful assistant to a molecular biologist Propose a brief name for the 10 most prominent biological processes performed by the system. Be concise, do not use unnecessary words. Be specific; avoid overly general statements such as' the proteins are involved in various cellular processes' Be factual; do not editorialize. For each important point, describe your reasoning and supporting information. Here are the interacting proteins: UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF7 Process 1: (1), UBE2I, TIP12, MARCHF
+
+
+Testing model: BioMedLM
+Cuda avail
+
+You are an efficient and insightful assistant to a molecular biologist
+Propose a brief name for the 10 most prominent biological processes performed by the system.
+
+Be concise, do not use unnecessary words. Be specific; avoid overly general
+statements such as 'the proteins are involved in various cellular processes'
+Be factual; do not editorialize.
+For each important point, describe your reasoning and supporting information.
+
+Here are the interacting proteins: UBE2I, TIP12, MARCHF7
+Process 1:
+
+UBE2I is a ubiquitin-conjugating enzyme that is involved in the ubiquitination of proteins.
+
+Process 2:
+
+TIP12 is a protein that is involved in the regulation of the cell cycle.
+
+Process 3:
+
+MARCHF7 is a protein that is involved in the regulation of the cell cycle.
+
+Process 4:
+
+The proteins are involved in various cellular processes.
+
+Process 5:
+
+The proteins are involved in various cellular processes.
+
+Process 6:
+
+The proteins are involved in various cellular processes.
+
+Process 7:
+
+The proteins are involved in various cellular processes.
+
+Process 8:
+
+The proteins are involved in various cellular processes.
+
+Process 9:
+
+The proteins are involved in various cellular processes.
+
+Process 10:
+
+The proteins are involved in various cellular processes.
+
+Process 11:
+
+The proteins are involved in various cellular processes.
+
+Process 12:
+
+The proteins are involved in various cellular processes.
+
+Process 13:
+
+The proteins are involved in various cellular processes.
+
+Process 14:
+
+The proteins are involved in various cellular processes.
+
+Process 15:
+
+The proteins are involved in various cellular processes.
+
+Process 16:
+
+The proteins are involved in various cellular processes.
+
+Process 17:
+
+The proteins are involved in various cellular processes.
+
+Process 18:
+
+The proteins are involved in various cellular processes.
+
+Process 19:
+
+The proteins are involved in various cellular processes.
+
+Process 20:
+
+The proteins are involved in various cellular processes.
+
+Process 21:
+
+The proteins are involved in various cellular processes.
+
+
+
+
+Testing model: BioGPT-Large
+Cuda avail
+You are an efficient and insightful assistant to a molecular biologist Propose a brief name for the 10 most prominent biological processes performed by the system. Be concise, do not use unnecessary words. Be specific; avoid overly general statements such as' the proteins are involved in various cellular processes' Be factual; do not editorialize. For each important point, describe your reasoning and supporting information. Here are the interacting proteins: UBE2I, TIP12, MARCHF7 Process 1: DNA repair; TIP12, UBE2I Process 2: DNA repair; TIP12, UBE2I Process 3: DNA repair; TIP12, UBE2I Process 4: DNA repair; TIP12, UBE2I Process 5: DNA repair; TIP12, UBE2I Process 6: DNA repair; TIP12, UBE2I Process 7: DNA repair; TIP12, UBE2I Process 8: DNA repair; TIP12, UBE2I Process 9: DNA repair; TIP12, UBE2I Process 1 0: DNA repair. < / FREETEXT > < / ABSTRACT > ▃
+
+

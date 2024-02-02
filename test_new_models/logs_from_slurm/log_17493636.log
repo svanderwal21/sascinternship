@@ -1,0 +1,235 @@
+Timestamp: Thu Feb  1 12:19:35 CET 2024
+GPU Usage:
+Thu Feb  1 12:19:35 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+CPU and Memory Usage:
+top - 12:19:35 up 73 days,  5:21,  1 user,  load average: 1.80, 1.32, 1.12
+Tasks: 353 total,   2 running, 351 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  2.5 sy,  0.0 ni, 92.4 id,  0.0 wa,  0.5 hi,  0.5 si,  0.0 st
+MiB Mem : 193422.5 total,  42210.9 free,   2671.7 used, 148539.8 buff/cache
+MiB Swap:   6164.0 total,   5502.7 free,    661.2 used. 184921.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 140395 svander+  20   0 3510360 482524 169148 D  31.2   0.2   0:03.61 python3
+ 140709 svander+  20   0   48060  19404  10008 R  31.2   0.0   0:00.05 python3
+      1 root      20   0  239740  11392   7184 S   0.0   0.0   5:43.20 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:06.44 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:29.24 ksoftir+
+     14 root      20   0       0      0      0 I   0.0   0.0  24:15.72 rcu_sch+
+Memory Usage:
+              total        used        free      shared  buff/cache   available
+Mem:          188Gi       2.6Gi        41Gi       4.0Gi       145Gi       180Gi
+Swap:         6.0Gi       661Mi       5.4Gi
+Timestamp: Thu Feb  1 12:20:35 CET 2024
+GPU Usage:
+Thu Feb  1 12:20:35 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |  28633MiB / 32768MiB |     98%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A    140709      C   python3                         26441MiB |
++-----------------------------------------------------------------------------+
+CPU and Memory Usage:
+top - 12:20:35 up 73 days,  5:22,  1 user,  load average: 1.55, 1.33, 1.13
+Tasks: 352 total,   3 running, 349 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.6 us,  5.1 sy,  0.0 ni, 87.2 id,  0.0 wa,  0.5 hi,  0.5 si,  0.0 st
+MiB Mem : 193422.5 total,  40197.1 free,   4460.0 used, 148765.3 buff/cache
+MiB Swap:   6164.0 total,   5502.7 free,    661.2 used. 183116.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 140709 svander+  20   0   37.9g   2.3g 661956 S 100.0   1.2   0:54.09 python3
+ 141228 svander+  20   0 3513384 442396 166988 R  37.5   0.2   0:02.71 python3
+ 141367 svander+  20   0   62668   4136   3196 R   6.2   0.0   0:00.01 top
+      1 root      20   0  239740  11392   7184 S   0.0   0.0   5:43.20 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:06.44 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:29.24 ksoftir+
+Memory Usage:
+              total        used        free      shared  buff/cache   available
+Mem:          188Gi       4.4Gi        39Gi       4.0Gi       145Gi       178Gi
+Swap:         6.0Gi       661Mi       5.4Gi
+Timestamp: Thu Feb  1 12:21:35 CET 2024
+GPU Usage:
+Thu Feb  1 12:21:35 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |  28633MiB / 32768MiB |     98%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A    140709      C   python3                         26441MiB |
++-----------------------------------------------------------------------------+
+CPU and Memory Usage:
+top - 12:21:36 up 73 days,  5:23,  1 user,  load average: 1.84, 1.46, 1.19
+Tasks: 352 total,   2 running, 350 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 11.9 us,  6.2 sy,  0.0 ni, 81.4 id,  0.0 wa,  0.5 hi,  0.0 si,  0.0 st
+MiB Mem : 193422.5 total,  38602.9 free,   6037.2 used, 148782.4 buff/cache
+MiB Swap:   6164.0 total,   5502.7 free,    661.2 used. 181522.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 140709 svander+  20   0   37.9g   2.3g 662064 S 100.0   1.2   1:54.17 python3
+ 141228 svander+  20   0   37.9g   2.3g 660276 S 100.0   1.2   1:01.40 python3
+ 141780 svander+  20   0   62668   4252   3316 R   6.7   0.0   0:00.01 top
+      1 root      20   0  239740  11392   7184 S   0.0   0.0   5:43.21 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:06.44 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:29.24 ksoftir+
+Memory Usage:
+              total        used        free      shared  buff/cache   available
+Mem:          188Gi       5.9Gi        37Gi       4.0Gi       145Gi       177Gi
+Swap:         6.0Gi       661Mi       5.4Gi
+Timestamp: Thu Feb  1 12:22:36 CET 2024
+GPU Usage:
+Thu Feb  1 12:22:36 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |  28633MiB / 32768MiB |     98%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A    140709      C   python3                         26441MiB |
++-----------------------------------------------------------------------------+
+CPU and Memory Usage:
+top - 12:22:36 up 73 days,  5:24,  1 user,  load average: 1.94, 1.56, 1.24
+Tasks: 352 total,   1 running, 351 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 14.8 us,  1.5 sy,  0.0 ni, 82.7 id,  0.5 wa,  0.5 hi,  0.0 si,  0.0 st
+MiB Mem : 193422.5 total,  38603.2 free,   6036.8 used, 148782.4 buff/cache
+MiB Swap:   6164.0 total,   5502.7 free,    661.2 used. 181522.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 140709 svander+  20   0   37.9g   2.3g 662064 S  93.8   1.2   2:54.15 python3
+ 141228 svander+  20   0   37.9g   2.3g 662276 S  93.8   1.2   2:01.39 python3
+      1 root      20   0  239740  11392   7184 S   0.0   0.0   5:43.21 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:06.44 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     13 root      20   0       0      0      0 S   0.0   0.0   0:29.24 ksoftir+
+     14 root      20   0       0      0      0 I   0.0   0.0  24:15.74 rcu_sch+
+Memory Usage:
+              total        used        free      shared  buff/cache   available
+Mem:          188Gi       5.9Gi        37Gi       4.0Gi       145Gi       177Gi
+Swap:         6.0Gi       661Mi       5.4Gi
+Timestamp: Thu Feb  1 12:23:36 CET 2024
+GPU Usage:
+Thu Feb  1 12:23:36 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100D-32Q      On   | 00000000:02:02.0 Off |                  N/A |
+| N/A   N/A    P0    N/A /  N/A |  28633MiB / 32768MiB |     98%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A    140709      C   python3                         26441MiB |
++-----------------------------------------------------------------------------+
+CPU and Memory Usage:
+top - 12:23:36 up 73 days,  5:25,  2 users,  load average: 1.98, 1.64, 1.29
+Tasks: 356 total,   2 running, 354 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 13.5 us,  9.3 sy,  0.0 ni, 77.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem : 193422.5 total,  38594.9 free,   6045.1 used, 148782.5 buff/cache
+MiB Swap:   6164.0 total,   5502.7 free,    661.2 used. 181514.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 141228 svander+  20   0   37.9g   2.3g 662276 R 100.0   1.2   3:01.44 python3
+ 140709 svander+  20   0   37.9g   2.3g 662064 S  93.8   1.2   3:54.17 python3
+ 124214 root      20   0  490476  30972  13712 S   6.2   0.0 252:29.27 tuned
+ 142993 svander+  20   0   62668   4340   3404 R   6.2   0.0   0:00.01 top
+      1 root      20   0  239740  11392   7184 S   0.0   0.0   5:43.21 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:06.44 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+
+Memory Usage:
+              total        used        free      shared  buff/cache   available
+Mem:          188Gi       5.9Gi        37Gi       4.0Gi       145Gi       177Gi
+Swap:         6.0Gi       661Mi       5.4Gi

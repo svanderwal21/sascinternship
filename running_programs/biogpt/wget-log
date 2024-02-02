@@ -1,0 +1,6 @@
+--2023-12-11 11:50:30--  https://msralaphilly2.blob.core.windows.net/release/BioGPT/checkpoints/QA-PubMedQA-BioGPT.tgz?sp=r
+Resolving msralaphilly2.blob.core.windows.net (msralaphilly2.blob.core.windows.net)... 52.239.193.100
+Connecting to msralaphilly2.blob.core.windows.net (msralaphilly2.blob.core.windows.net)|52.239.193.100|:443... connected.
+HTTP request sent, awaiting response... 409 Public access is not permitted on this storage account.
+2023-12-11 11:50:31 ERROR 409: Public access is not permitted on this storage account..
+

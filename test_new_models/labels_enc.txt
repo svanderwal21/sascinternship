@@ -1,0 +1,842 @@
+321	Glutathione metabolism
+51	Alanine and aspartate metabolism
+773	Translation factors
+225	Electron transport chain OXPHOS system in mitochondria
+297	GPCRs other
+582	Osteoclast signaling
+380	IL 5 signaling pathway
+472	Matrix metalloproteinases
+616	Pentose phosphate metabolism
+622	Phase I biotransformations non P450
+67	Androgen receptor signaling pathway
+35	AMP activated protein kinase signaling
+717	Sphingolipid pathway
+303	Ganglio sphingolipid metabolism
+104	Bone morphogenic protein signaling and regulation
+270	Fatty acid beta oxidation
+567	Nucleotide binding oligomerization domain NOD pathway
+583	Osteopontin signaling
+393	Influenza A virus infection
+703	Serotonin transporter activity
+755	Target of rapamycin signaling
+324	Glycine metabolism
+696	Selenium micronutrient network
+632	Physiological and pathological hypertrophy of the heart
+830	miRNA regulation of DNA damage response
+803	Vitamin D metabolism
+800	Vitamin B12 metabolism
+68	Angiogenesis
+233	Energy metabolism
+497	MicroRNAs in cardiomyocyte hypertrophy
+835	miRNAs involved in DNA damage response
+770	Transcription factors regulate miRNAs related to cardiac hypertrophy
+782	Type II diabetes mellitus
+283	Folate alcohol and cancer pathway hypotheses
+341	Heart development
+552	Nicotine metabolism in liver cells
+280	Fluoropyrimidine activity
+551	Nicotine effect on dopaminergic neurons
+550	Nicotine effect on chromaffin cells
+156	Codeine and morphine metabolism
+224	Eicosanoid synthesis
+563	Nuclear receptors
+751	TP53 network
+284	Folate metabolism
+74	Apoptosis modulation and signaling
+129	Cell cycle
+650	Proteasome degradation
+400	Integrin mediated cell adhesion
+359	Homologous recombination
+620	Peroxisomal beta oxidation of tetracosanoyl CoA
+170	Cori cycle
+371	IL 1 signaling pathway
+141	Cholesterol biosynthesis pathway
+399	Integrated cancer pathway
+763	Thyroxine thyroid hormone production
+723	Sterol regulatory element binding proteins SREBP signaling
+692	SRF and miRs in smooth muscle differentiation and proliferation
+312	Genes targeted by miRNAs in adipocytes
+220	Effects of nitric oxide
+414	Iron metabolism in placenta
+691	SREBF and miR33 in cholesterol and lipid homeostasis
+660	RANKL RANK signaling pathway
+130	Cell differentiation expanded index
+131	Cell differentiation index
+762	Thyroid stimulating hormone TSH signaling pathway
+438	Leptin signaling pathway
+285	Follicle stimulating hormone FSH signaling pathway
+750	TNF related weak inducer of apoptosis TWEAK signaling pathway
+646	Prolactin signaling pathway
+499	Microtubule cytoskeleton regulation
+381	IL 7 signaling pathway
+58	Alzheimer 39 s disease and miRNA effects
+272	Fatty acid omega oxidation
+545	Neural crest differentiation
+373	IL 17 signaling pathway
+784	Type III interferon signaling
+80	Arrhythmogenic right ventricular cardiomyopathy
+232	Endothelin pathways
+382	IL 9 signaling pathway
+760	Thymic stromal lymphopoietin TSLP signaling pathway
+488	Metastatic brain tumor
+633	Pilocytic astrocytoma
+315	Glioblastoma signaling pathways
+66	Androgen receptor network in prostate cancer
+731	Synaptic vesicle pathway
+612	Pathogenic Escherichia coli infection
+314	Glial cell differentiation
+207	Drug induction of bile acid pathway
+412	Irinotecan pathway
+662	RalA downstream regulated genes
+188	Deregulation of Rab and Rab effector genes in bladder cancer
+87	B cell receptor signaling pathway
+749	TNF alpha signaling pathway
+33	AGE RAGE pathway
+52	Allograft rejection
+408	Interleukin 11 signaling pathway
+767	Trans sulfuration pathway
+828	miRNA biogenesis
+171	Corticotropin releasing hormone signaling pathway
+609	Parkin ubiquitin proteasomal system pathway
+46	Adipogenesis
+305	Gastric cancer network 1
+306	Gastric cancer network 2
+108	Butyrate induced histone acetylation
+358	Histone modifications
+610	Parkinson 39 s disease pathway
+575	Oncostatin M signaling pathway
+105	Brain derived neurotrophic factor BDNF signaling pathway
+618	Peptide GPCRs
+125	Cardiac progenitor differentiation
+576	One carbon metabolism
+718	Spinal cord injury
+658	Quercetin and Nf kB AP 1 induced apoptosis
+203	Dopamine metabolism
+53	Alpha 6 beta 4 signaling pathway
+674	Retinoblastoma gene in cancer
+65	Amyotrophic lateral sclerosis ALS 
+740	TCA cycle and deficiency of pyruvate dehydrogenase complex PDHc 
+336	HIF1A and PPARG regulation of glycolysis
+708	Small ligand GPCRs
+519	NAD biosynthesis II from tryptophan 
+192	Diclofenac metabolic pathway
+533	Nanomaterial induced apoptosis
+536	Nanoparticle triggered autophagic cell death
+537	Nanoparticle triggered regulated necrosis
+37	ATM signaling pathway
+766	Trans sulfuration one carbon metabolism and related pathways
+597	PDGF pathway
+323	Glycerophospholipid biosynthetic pathway
+158	Colchicine metabolic pathway
+73	Apoptosis
+728	Sulindac metabolic pathway
+641	Primary focal segmental glomerulosclerosis FSGS 
+736	T cell receptor and co stimulatory signaling
+82	Aryl hydrocarbon receptor pathway
+304	Gastric acid production
+680	S1P receptor signal transduction
+216	Ebstein Barr virus LMP1 signaling
+159	Common pathways underlying drug addiction
+406	Interleukin 1 IL 1 structural pathway
+79	Aripiprazole metabolic pathway
+535	Nanoparticle mediated activation of receptor signaling
+351	Heroin metabolism
+442	Lidocaine metabolism
+560	Notch signaling
+103	Blood clotting cascade
+124	Cardiac hypertrophic response
+817	exRNA mechanism of action and biogenesis
+162	Complement system
+467	Mammary gland development pathway Embryonic development Stage 1 of 4 
+470	Mammary gland development pathway Puberty Stage 2 of 4 
+468	Mammary gland development pathway Involution Stage 4 of 4 
+274	Felbamate metabolism
+469	Mammary gland development pathway Pregnancy and lactation Stage 3 of 4 
+155	Cocaine metabolism
+102	Bladder cancer
+339	Hair follicle development organogenesis part 2 of 3
+338	Hair follicle development cytodifferentiation part 3 of 3
+596	PCSK9 mediated LDL receptor degradation
+636	Pluripotent stem cell differentiation pathway
+343	Hematopoietic stem cell differentiation
+229	Endoderm differentiation
+308	Gene regulatory network modelling somitogenesis 
+204	Dopaminergic neurogenesis
+477	Mesodermal commitment pathway
+217	Ectoderm differentiation
+378	IL 3 signaling pathway
+76	Apoptosis related network due to altered Notch3 in ovarian cancer
+383	IL1 and megakaryocytes in obesity
+742	TCA cycle nutrient use and invasiveness of ovarian cancer
+250	Extracellular vesicle mediated signaling in recipient cells
+448	Liver X receptor pathway
+165	Constitutive androstane receptor pathway
+640	Pregnane X receptor pathway
+804	Vitamin D receptor pathway
+604	PPAR alpha pathway
+267	Farnesoid X receptor pathway
+554	Nod like receptor NLR signaling pathway
+317	Glucocorticoid receptor pathway
+241	Estrogen receptor pathway
+565	Nuclear receptors meta pathway
+530	NRF2 pathway
+594	Oxytocin signaling
+517	Myometrial relaxation and contraction pathways
+194	Differentiation of white and brown adipocyte
+834	miRNA targets in ECM and membrane receptors
+404	Interactome of polycomb repressive complex 2 PRC2 
+178	DDX1 as a regulatory component of the Drosha microprocessor
+368	Hypoxia mediated EMT and stemness
+564	Nuclear receptors in lipid metabolism and toxicity
+771	Transcriptional activation by NRF2 in response to phytochemicals
+425	Kit receptor signaling pathway
+281	Focal adhesion
+422	Ketone bodies synthesis and degradation
+349	Hepatocyte growth factor receptor signaling
+268	Fas ligand pathway and stress induction of heat shock proteins
+581	Osteoblast signaling
+775	Triacylglyceride synthesis
+168	Copper homeostasis
+587	Overview of nanoparticle effects
+214	EV release from cardiac cells and their functional effects
+476	Melatonin metabolism and effects
+818	let 7 inhibition of ES cell reprogramming
+208	Dual hijack model of Vif in HIV infection
+459	MFAP5 mediated ovarian cancer cell motility and invasiveness
+816	eIF5A regulation in response to inhibition of the nuclear export system
+659	RAC1 PAK1 p38 MMP2 pathway
+295	GPCRs class B secretin like
+584	Ovarian infertility
+259	FTO obesity variant mechanism
+248	Evolocumab mechanism to reduce LDL cholesterol
+527	NOTCH1 regulation of endothelial cell calcification
+395	Initiation of transcription and translation elongation at the HIV 1 LTR
+287	G protein signaling pathways
+639	Pre implantation embryo
+815	Zinc homeostasis
+271	Fatty acid biosynthesis
+489	Methionine de novo and salvage pathway
+455	MECP2 and associated Rett syndrome
+176	Cytosine methylation
+706	Sleep regulation
+495	MicroRNA for targeting cancer growth and vascularization in glioblastoma
+151	Circadian rhythm genes
+836	mir 124 predicted interactions with cell cycle and differentiation 
+827	miR 517 relationship with ARCN1 and USP1
+769	Transcription factor regulation in adipogenesis
+447	Lipid particles composition
+626	Photodynamic therapy induced AP 1 survival signaling
+629	Photodynamic therapy induced NFE2L2 NRF2 survival signaling
+630	Photodynamic therapy induced unfolded protein response
+627	Photodynamic therapy induced HIF 1 survival signaling
+628	Photodynamic therapy induced NF kB survival signaling
+449	Lung fibrosis
+334	Gut liver indole metabolism 
+813	Wnt signaling pathway
+523	NAD metabolism sirtuins and aging
+115	Caffeine and theobromine metabolism
+398	Insulin signaling in adipocytes normal condition 
+397	Insulin signaling in adipocytes diabetic condition 
+384	IL6 signaling pathway
+385	Imatinib and chronic myeloid leukemia
+521	NAD metabolism
+520	NAD biosynthetic pathways
+348	Hepatitis C and hepatocellular carcinoma
+614	Pathways affected in adenoid cystic carcinoma
+367	Hypothetical craniofacial development pathway
+407	Interleukin 1 induced activation of NF kB
+344	Hematopoietic stem cell gene regulation by GABP alpha beta complex
+810	Wnt beta catenin signaling pathway in leukemia
+747	TGF beta signaling pathway
+665	Regulation of Wnt B catenin signaling by small molecule compounds
+484	Metabolism of dichloroethylene by CYP450
+366	Hypothesized pathways in pathogenesis of cardiovascular disease
+401	Interactions between LOXL4 and oxidative stress pathway
+820	lncRNA mediated mechanisms of therapeutic resistance
+756	Tgif disruption of Shh signaling
+88	BDNF TrkB signaling
+64	Amplification and expansion of oncogenic pathways as metastatic traits
+135	Cell type dependent selectivity of CCK2R signaling
+510	Mitochondrial long chain fatty acid beta oxidation
+631	Physico chemical features and toxicity associated pathways
+454	MAPK signaling pathway
+724	Striated muscle contraction pathway
+75	Apoptosis modulation by HSP70
+600	PI3K AKT mTOR signaling pathway and therapeutic opportunities in prostate cancer
+122	Canonical and non canonical Notch signaling
+451	MAPK and NFkB signaling pathways inhibited by Yersinia YopJ
+260	Factors and pathways affecting insulin like growth factor IGF1 Akt signaling
+748	TLR4 signaling and tolerance
+213	ERK pathway in Huntington 39 s disease
+765	Toll like receptor signaling related to MyD88
+746	TGF beta signaling in thyroid cells for epithelial mesenchymal transition
+734	T cell antigen receptor TCR pathway during Staphylococcus aureus infection
+562	Novel intracellular components of RIG I like receptor pathway
+120	Cannabinoid receptor signaling
+795	Valproic acid pathway
+667	Regulation of apoptosis by parathyroid hormone related protein
+123	Canonical and non canonical TGF B signaling
+38	ATR signaling
+90	BMP2 WNT4 FOXO1 pathway in primary endometrial stromal cell differentiation
+461	MYD88 distinct input output pathway
+36	ATM signaling in development and disease 
+21	4 hydroxytamoxifen dexamethasone and retinoic acids regulation of p27 expression
+794	VEGFA VEGFR2 signaling
+534	Nanomaterial induced inflammasome activation
+93	Benzene metabolism
+190	Development of pulmonary dendritic cells and macrophage subsets
+189	Development and heterogeneity of the ILC family
+508	Mitochondrial gene expression
+69	Angiopoietin like protein 8 regulatory pathway
+352	Hfe effect on hepcidin production
+60	Amino acid metabolism
+72	ApoE and miR 146 in inflammation and atherosclerosis
+89	BMP signaling in eyelid development
+139	Chemokine signaling pathway
+209	EDA signaling in hair follicle development
+226	Embryonic stem cell pluripotency pathways
+282	Focal adhesion PI3K Akt mTOR signaling pathway
+420	Kennedy pathway from sphingolipids
+436	Leptin and adiponectin
+437	Leptin insulin signaling overlap
+498	Microglia pathogen phagocytosis pathway
+825	miR 222 in exercise induced cardiac growth
+577	One carbon metabolism and related pathways
+590	Oxidative damage response
+605	PPAR signaling pathway
+677	Robo4 and VEGF signaling pathways crosstalk
+700	Serotonin and anxiety related events
+753	TYROBP causal network in microglia
+699	Serotonin and anxiety
+379	IL 4 signaling pathway
+823	mRNA protein and metabolite inducation pathway by cyclosporin A
+299	GPR40 pathway
+180	DNA IR double strand breaks and cellular response via ATM
+494	Mevalonate pathway
+446	Lipid metabolism pathway
+826	miR 509 3p alteration of YAP1 ECM axis
+335	H19 action Rb E2F1 signaling and CDK Beta catenin activity
+570	OSX and miRNAs in tooth development
+598	PDGFR beta pathway
+832	miRNA regulation of prostate cancer signaling pathways
+831	miRNA regulation of p53 pathway in prostate cancer
+814	Wnt signaling pathway and pluripotency
+643	Prion disease pathway
+243	Ethanol effects on histone modifications
+638	Prader Willi and Angelman syndrome
+840	p38 MAPK signaling pathway
+526	NO cGMP PKG mediated neuroprotection
+179	DNA IR damage and cellular response via ATR
+153	Clear cell renal cell carcinoma pathways
+689	SCFA and skeletal muscle substrate metabolism
+247	Eukaryotic transcription initiation
+592	Oxidative stress response
+249	Exercise induced circadian regulation
+822	mRNA processing
+277	Fibrin complement receptor 3 signaling pathway
+601	PI3K AKT mTOR vitamin D3 signaling
+485	Metabolism of sphingolipids in ER and Golgi apparatus
+462	Macrophage markers
+606	PTF1A related regulatory pathway
+719	Splicing factor NOVA regulated synaptic proteins
+809	White fat cell differentiation
+812	Wnt signaling in kidney disease
+187	Degradation pathway of sphingolipids including diseases
+230	Endometrial cancer
+99	Biosynthesis and regeneration of tetrahydrobiopterin and catabolism of phenylalanine
+290	GABA metabolism aka GHB 
+291	GABA receptor signaling
+602	PI3K Akt signaling pathway
+486	Metabolism of tetrahydrocannabinol THC 
+712	Somatroph axis GH and its relationship to dietary restriction and aging
+493	Mevalonate arm of cholesterol biosynthesis pathway with inhibitors
+492	Mevalonate arm of cholesterol biosynthesis pathway
+117	Caloric restriction and aging
+360	Hormonal control of pubertal growth spurt
+387	Immune response to tuberculosis
+778	Tumor suppressor activity of SMARCB1
+457	MET in type 1 papillary renal cell carcinoma
+350	Hereditary leiomyomatosis and renal cell carcinoma pathway
+776	Tryptophan catabolism leading to NAD production
+772	Transcriptional cascade regulating adipogenesis
+147	Chromosomal and microsatellite instability in colorectal cancer 
+215	Ebola virus infection in host
+452	MAPK cascade
+549	Neurotransmitter disorders
+624	Phosphodiesterases in neuronal function
+663	Ras signaling
+655	Purine metabolism and related disorders
+657	Pyrimidine metabolism and related diseases
+801	Vitamin B6 dependent and responsive disorders
+42	Acrylamide biotransformation and exposure biomarkers
+427	Krebs cycle disorders
+278	Flavan 3 ol metabolic pathway
+237	Epithelial to mesenchymal transition in colorectal cancer
+668	Regulation of sister chromatid separation at the metaphase anaphase transition
+779	Type 2 papillary renal cell carcinoma
+342	Hedgehog signaling pathway
+558	Non small cell lung cancer
+819	lncRNA in canonical Wnt signaling and colorectal cancer
+198	Disorders of folate metabolism and transport
+106	Breast cancer pathway
+607	Pancreatic adenocarcinoma pathway
+244	Ethanol metabolism production of ROS by CYP2E1
+799	Vitamin B12 disorders
+811	Wnt signaling
+788	Ultraconserved region 339 modulation of tumor suppressor microRNAs in cancer
+460	MTHFR deficiency
+481	Metabolic reprogramming in colon cancer
+490	Methionine metabolism leading to sulfur amino acids and related disorders
+759	Thiamine metabolic pathways
+45	Acute viral myocarditis
+435	Lamin A processing pathway
+589	Oxidation by cytochrome P450
+720	Statin inhibition of cholesterol production
+251	Extracellular vesicles in the crosstalk of cardiac cells
+394	Inhibition of exosome biogenesis and secretion by Manumycin A in CRPC cells
+572	Oligodendrocyte specification and differentiation leading to myelin components for CNS
+675	Rett syndrome causing genes
+276	Ferroptosis
+829	miRNA degrading enzymes
+507	Mitochondrial fatty acid synthesis pathway
+219	Effect of progerin on genes involved in Hutchinson Gilford progeria syndrome
+758	Thermogenesis
+502	Mitochondrial complex I assembly model OXPHOS system
+833	miRNA role in immune response in sepsis
+538	Neovascularisation processes
+838	ncRNAs involved in Wnt signaling in hepatocellular carcinoma
+837	ncRNAs involved in STAT3 signaling in hepatocellular carcinoma
+556	Non genomic actions of 1 25 dihydroxyvitamin D3
+807	Vitamins A and D action mechanisms
+149	Ciliary landscape
+529	NRF2 ARE regulation
+210	EGF EGFR signaling pathway
+557	Non homologous end joining
+95	Bile acids synthesis and enterohepatic circulation 
+559	Nonalcoholic fatty liver disease
+511	Model for regulation of MSMP expression in cancer cells and its proangiogenic role in ovarian tumors
+496	MicroRNA network associated with chronic lymphocytic leukemia
+253	FABP4 in ovarian cancer
+634	Platelet mediated interactions with vascular and circulating cells
+431	LTF danger signal response pathway
+729	Supression of HMGB1 mediated inflammation by THBD
+55	Altered glycosylation of MUC1 in tumor microenvironment
+672	Resistin as a regulator of inflammation
+802	Vitamin D in inflammatory diseases
+670	Relationship between inflammation COX 2 and EGFR
+166	Control of immune tolerance by vasoactive intestinal peptide
+136	Cells and molecules involved in local acute inflammatory response 
+695	Selective expression of chemokine receptors during T cell polarization
+372	IL 10 anti inflammatory signaling pathway 
+704	Signal transduction through IL1R
+288	G1 to S cell cycle control
+173	Cysteine and methionine catabolism
+785	Tyrosine metabolism and related disorders
+514	Molybdenum cofactor Moco biosynthesis
+301	Gamma glutamyl cycle for the biosynthesis and degradation of glutathione including diseases
+138	Cerebral organic acidurias including diseases
+331	Glycosylation and related congenital defects
+479	Metabolic pathway of LDL HDL and TG including diseases
+152	Classical pathway of steroidogenesis with glucocorticoid and mineralocorticoid metabolism
+56	Alternative pathway of fetal androgen synthesis
+391	Inflammatory response pathway
+410	Intraflagellar transport proteins binding to dynein
+768	Transcription co factors SKI and SKIL protein partners
+474	Mechanoregulation and pathology of YAP TAZ via Hippo and non Hippo mechanisms
+236	Envelope proteins and their potential roles in EDMD physiopathology
+311	Genes related to primary cilium development based on CRISPR 
+355	Hippo YAP signaling
+669	Regulatory circuits of the STAT3 signaling pathway
+730	Synaptic signaling pathways associated with autism spectrum disorder
+356	Hippo signaling regulation pathways
+354	Hippo Merlin signaling dysregulation
+440	Leukocyte intrinsic Hippo pathway functions
+593	Oxysterols derived from cholesterol
+286	Fragile X syndrome
+294	GPCRs class A rhodopsin like
+254	FBXL10 enhancement of MAP ERK signaling in diffuse large B cell lymphoma
+586	Overview of interferons mediated signaling pathway
+402	Interactions between immune cells and microRNAs in tumor microenvironment
+458	MFAP5 effect on permeability and motility of endothelial cells via cytoskeleton rearrangement
+134	Cell migration and invasion through p75NTR
+121	Canonical NF kB pathway
+543	Neural crest cell migration during development
+544	Neural crest cell migration in cancer
+774	Translation inhibitors in chronically activated PDGFRA cells
+792	Urea cycle and related diseases
+546	Neurodegeneration with brain iron accumulation NBIA subtypes pathway
+118	Cancer immunotherapy by CTLA4 blockade
+98	Biomarkers for urea cycle disorders
+97	Biomarkers for pyrimidine metabolism disorders
+119	Cancer immunotherapy by PD 1 blockade
+483	Metabolism of alpha linolenic acid
+463	Major receptors targeted by epinephrine and norepinephrine
+790	Urea cycle and associated pathways
+47	Aerobic glycolysis
+473	Measles virus infection
+777	Tryptophan metabolism
+177	Cytosolic DNA sensing pathway
+418	Joubert syndrome
+15	22q11 2 copy number variation syndrome
+707	Small cell lung cancer
+307	Gastrin signaling pathway
+185	DNA replication
+62	Amino acid metabolism pathway excerpt histidine catabolism extension
+347	Hepatitis B infection
+464	Male infertility
+340	Head and neck squamous cell carcinoma
+475	Melanoma
+439	Leucine isoleucine and valine metabolism
+697	Serine metabolism
+805	Vitamin D sensitive calcium signaling in depression
+615	Pathways of nucleic acid metabolism and innate immune sensing
+145	Cholesterol metabolism with Bloch and Kandutsch Russell pathways
+221	Eicosanoid metabolism via cyclooxygenases COX 
+222	Eicosanoid metabolism via cytochrome P450 monooxygenases pathway
+223	Eicosanoid metabolism via lipooxygenases LOX 
+322	Glycerolipids and glycerophospholipids
+573	Omega 3 omega 6 fatty acid synthesis
+574	Omega 9 fatty acid synthesis
+716	Sphingolipid metabolism overview
+715	Sphingolipid metabolism integrated pathway
+227	Endochondral ossification
+421	Ketogenesis and ketolysis
+761	Thyroid hormones production and peripheral downstream signaling effects
+541	Netrin UNC5B signaling pathway
+337	HIPK2 in kidney fibrosis
+92	Base excision repair
+568	Nucleotide excision repair
+374	IL 18 signaling pathway
+671	Renin angiotensin aldosterone system RAAS 
+540	Nephrotic syndrome
+603	PKC gamma calcium signaling pathway in ataxia
+256	FGFR3 signaling in chondrocyte proliferation and terminal differentiation
+175	Cytoplasmic ribosomal proteins
+651	Proteoglycan biosynthesis
+713	Somitogenesis in the context of spondylocostal dysostosis
+780	Type I collagen synthesis in the context of osteogenesis imperfecta
+580	Osteoblast differentiation and related diseases
+86	Autosomal recessive osteopetrosis pathways
+456	MED and pseudoachondroplasia genes
+255	FGF23 signaling in hypophosphatemic rickets and related disorders
+654	Purine metabolism
+205	Downregulation of ACE2 by SARS CoV 2 spike protein
+150	Ciliopathies
+143	Cholesterol biosynthesis with skeletal dysplasias
+211	EGFR tyrosine kinase inhibitor resistance
+228	Endochondral ossification with skeletal dysplasias
+396	Insulin signaling
+711	Somatic sex determination
+328	Glycosaminoglycan degradation
+745	TGF beta receptor signaling in skeletal dysplasias
+167	Conversion of angiotensinogen to angiotensin II 
+310	Genes controlling nephrogenesis
+821	mBDNF and proBDNF regulation of GABA neurotransmission
+292	GDNF RET signaling axis
+664	Regucalcin in proximal tubule epithelial kidney cells
+466	Mammalian disorder of sexual development
+392	Influence of laminopathies on Wnt signaling
+684	SARS CoV 2 and COVID 19 pathway
+443	Linoleic acid metabolism affected by SARS CoV 2
+409	Intracellular trafficking proteins involved in CMT neuropathy
+353	Hijack of ubiquitination by SARS CoV 2
+231	Endoplasmic reticulum stress response in coronavirus infection
+363	Host pathogen interaction of human coronaviruses autophagy
+362	Host pathogen interaction of human coronaviruses apoptosis
+781	Type I interferon induction and signaling during SARS CoV 2 infection
+424	Kisspeptin kisspeptin receptor system in the ovary
+450	MAP3K1 role in promoting and blocking gonadal determination
+619	Peroxiredoxin 2 induced ovarian failure
+109	CAMKK2 pathway
+201	Disruption of postsynaptic signaling by CNV
+43	Activation of NLRP3 inflammasome by SARS CoV 2
+361	Host pathogen interaction of human coronaviruses MAPK signaling
+585	Overlap between signal transduction pathways contributing to LMNA laminopathies
+364	Host pathogen interaction of human coronaviruses interferon induction
+683	SARS CoV 2 and ACE2 receptor molecular mechanisms
+611	Pathogenesis of SARS CoV 2 mediated by nsp9 nsp10 complex
+112	COVID 19 adverse outcome pathway
+376	IL 2 signaling pathway
+656	Purinergic signaling
+430	LDLRAD4 and what we know about it
+14	1q21 1 copy number variation syndrome
+20	3q29 copy number variation syndrome
+688	SARS coronavirus and innate immunity
+652	Proximal tubule transport
+137	Cellular proteostasis
+547	Neuroinflammation
+503	Mitochondrial complex II assembly
+504	Mitochondrial complex III assembly
+505	Mitochondrial complex IV assembly
+84	Autophagy
+789	Unfolded protein response
+114	COVID 19 thrombosis and anticoagulation
+453	MAPK pathway in congenital thyroid cancer
+195	Direct reversal repair
+26	7q11 23 copy number variation syndrome
+621	Perturbations to host cell autophagy induced by SARS CoV 2 proteins
+5	15q11 2 copy number variation syndrome
+298	GPR143 in melanocytes and retinal pigment epithelium cells
+7	15q13 3 copy number variation syndrome
+184	DNA repair pathways full network
+553	Nitric oxide metabolism in cystic fibrosis
+10	16p11 2 proximal deletion syndrome
+9	16p11 2 distal deletion syndrome
+721	Steroid biosynthesis
+693	STING pathway in Kawasaki like disease and COVID 19
+50	Airway smooth muscle cell contraction
+841	p53 transcriptional gene network
+279	Fluoroacetic acid toxicity
+661	RAS and bradykinin pathways in COVID 19
+791	Urea cycle and metabolism of amino groups
+300	Galanin receptor pathway
+625	Phosphoinositides metabolism
+325	Glycogen synthesis and degradation
+296	GPCRs class C metabotropic glutamate pheromone
+839	nsp1 from SARS CoV 2 inhibits translation initiation in the host cell
+63	Amino acid transport defects IEMs 
+246	Ethylmalonic encephalopathy
+101	Biotin metabolism including IMDs
+309	Genes associated with the development of rheumatoid arthritis
+70	Angiotensin II receptor type 1 pathway
+676	Riboflavin and CoQ disorders
+509	Mitochondrial immune response to SARS CoV 2
+685	SARS CoV 2 innate immunity evasion and cell specific immune response
+617	Pentose phosphate pathway in senescent cells
+428	Kynurenine pathway and links to cell senescence
+522	NAD metabolism in oncogene induced senescence and mitochondrial dysfunction associated senescence
+327	Glycolysis in senescence
+741	TCA cycle in senescence
+539	Nephrogenesis
+191	Development of ureteric collection system
+107	Burn wound healing
+273	Fatty acid transporters
+258	FOXP3 in COVID 19
+25	7 oxo C and 7 beta HC pathways
+682	SARS CoV 2 altering angiogenesis via NRP1
+257	FOXA2 pathway
+513	Modulators of TCR signaling and T cell activation
+419	Kallmann syndrome
+710	Soluble ACE2 mediated cell entry of SARS CoV 2
+735	T cell modulation in pancreatic cancer
+548	Neuroinflammation and glutamatergic signaling
+796	Vasopressin regulated water reabsorption
+635	Pleural mesothelioma
+648	Prostaglandin signaling
+423	Kinin Kallikrein pathway
+163	Complement system in neuronal development and plasticity
+403	Interactions of natural killer cells in pancreatic cancer
+578	Opioid receptor pathways
+579	Orexin receptor pathway
+588	Overview of proinflammatory and profibrotic mediators
+110	CCL18 signaling pathway
+733	T cell activation SARS CoV 2
+666	Regulation of actin cytoskeleton
+164	Congenital generalized lipodystrophy
+266	Familial partial lipodystrophy
+645	Progeria associated lipodystrophy
+41	Acquired partial lipodystrophy Barraquer Simons syndrome
+261	Familial hyperlipidemia type 1
+262	Familial hyperlipidemia type 2
+263	Familial hyperlipidemia type 3
+264	Familial hyperlipidemia type 4
+265	Familial hyperlipidemia type 5
+71	Antiviral and anti inflammatory effects of Nrf2 on SARS CoV 2 pathway
+569	Nucleotide excision repair in xeroderma pigmentosum 
+542	Network map of SARS CoV 2 signaling pathway
+681	SARS CoV 2 B 1 1 7 variant antagonises innate immune activation
+157	Cohesin complex Cornelia de Lange syndrome
+690	SMC1 SMC3 role in DNA damage Cornelia de Lange Syndrome
+525	NIPBL role in DNA damage Cornelia de Lange syndrome
+388	Inclusion body myositis
+714	Sphingolipid metabolism in senescence
+647	Prostaglandin and leukotriene metabolism in senescence 
+506	Mitochondrial fatty acid oxidation disorders
+57	Alzheimer 39 s disease
+757	Th17 cell differentiation pathway
+555	Non classical role of vitamin D
+34	ALA oxylipin metabolism
+444	Linoleic acid oxylipin metabolism
+293	GDNF signaling
+531	NRP1 triggered signaling pathways in pancreatic cancer 
+445	Lipid metabolism in senescent cells
+415	Iron sulfur cluster biogenesis
+518	N glycan biosynthesis
+202	Docosahexaenoic acid oxylipin metabolism
+78	Arachidonic acid AA ARA oxylipin metabolism
+687	SARS CoV 2 replication organelle formation
+793	Urotensin II mediated signaling pathway
+365	Hypertrophy model
+332	Glyoxylate metabolism
+346	Hemesynthesis defects and porphyrias
+441	Leukotriene metabolic pathway
+413	Iron metabolism disorders
+200	Disorders of galactose metabolism 
+787	Ulcerative colitis signaling
+196	Disorders in ketone body synthesis
+197	Disorders of bile acid synthesis and biliary transport
+199	Disorders of fructose metabolism
+100	Biosynthesis and turnover of 1 deoxy sphingoid bases
+186	DYRK1A involvement regarding cell proliferation in brain development
+679	Roles of ceramides in development of insulin resistance
+644	Pro survival signaling of neuroprotectin D1
+686	SARS CoV 2 mitochondrial chronic oxidative stress and endothelial dysfunction
+806	Vitamin K metabolism and activation of dependent proteins
+824	mRNA vaccine activation of dendritic cell and induction of IFN 1
+169	Copper metabolism
+172	Creatine pathway
+673	Resolvin E1 and resolvin D1 signaling pathways promoting inflammation resolution
+512	Modulation of PI3K Akt mTOR signaling by bioactive sphingolipids
+146	Cholesterol synthesis disorders
+732	Synthesis of ceramides and 1 deoxyceramides
+390	Inflammatory bowel disease signaling
+653	PtdIns 4 5 P2 in cytokinesis pathway
+206	Dravet syndrome
+54	Alstrom syndrome
+154	Clock controlled autophagy in bone metabolism
+59	Amino acid conjugation of benzoic acid
+319	Glucose metabolism in triple negative breast cancer cells
+61	Amino acid metabolism in triple negative breast cancer cells
+808	Warburg effect modulated by deubiquitinating enzymes and their substrates
+252	Extrafollicular and follicular B cell activation by SARS CoV 2
+193	Diet dependent trimethylamine trimethylamine N oxide metabolism 
+482	Metabolic reprogramming in pancreatic cancer
+16	2q11 2 copy number variation syndrome
+17	2q13 copy number variation syndrome
+18	2q21 1 copy number variation syndrome
+19	2q37 copy number variation syndrome
+357	Hippocampal synaptogenesis and neurogenesis
+81	Arsenic metabolism and reactive oxygen species generation
+91	Bardet Biedl syndrome
+239	Estradiol regulation in porto sinusoidal vascular disease
+471	Markers of kidney cell lineage
+140	Cholestasis
+432	Lac Phe pathway
+289	G13 signaling pathway
+501	Mitochondrial beta oxidation
+113	COVID 19 and endothelial cell senescence
+313	Genetic causes of porto sinusoidal vascular disease
+429	LDL influence on CD14 and TLR4
+218	Effect of intestinal microbiome on anticoagulant response of vitamin K antagonists
+245	Ether lipid biosynthesis
+240	Estrogen metabolism
+722	Steroid hormone precursor biosynthesis
+500	Mineralocorticoid biosynthesis
+40	Acetylcholine synthesis
+316	Glucocorticoid biosynthesis
+148	Chronic hyperglycemia impairment of neuron function
+132	Cell interactions of the pancreatic cancer microenvironment
+386	Immune infiltration in pancreatic cancer
+12	17q12 copy number variation syndrome
+330	Glycosphingolipid metabolism
+44	Acute myeloid leukemia
+705	Sildenafil treatment
+302	Ganglio series sphingolipid metabolism
+369	ID signaling pathway
+174	Cytokines and inflammatory response
+752	TROP2 regulatory signaling
+434	Lacto series sphingolipid metabolism
+144	Cholesterol metabolism
+183	DNA mismatch repair
+416	Isoglobo series sphingolipids
+480	Metabolic pathways of fibroblasts
+127	Carnosine metabolism of glial cells
+433	Lactate shuttle in glial cells
+694	Sebaleic acid formation and metabolism
+642	Primary ovarian insufficiency
+275	Female steroid hormones in cardiomyocyte energy metabolism
+465	Male steroid hormones in cardiomyocyte energy metabolism
+111	CKAP4 signaling pathway map
+269	Fatty Acids and Lipoproteins Transport in Hepatocytes
+571	Octadecanoid formation from linoleic acid
+142	Cholesterol biosynthesis pathway in hepatocytes
+85	Autophagy in pancreatic ductal adenocarcinoma
+234	Enterocyte cholesterol metabolism
+389	Induction of autophagy and toll like receptor signaling pathways by graphene oxide 
+326	Glycolysis and gluconeogenesis
+613	Pathophysiological roles of DUX4 in FSHD1
+39	Abnormal calcium handling and its effects on muscle contraction in DMD
+126	Cardiomyocyte signaling pathways converging on Titin
+13	1p36 copy number variation syndrome
+28	8p23 1 copy number variation syndrome
+377	IL 26 signaling pathways
+2	11p11 2 copy number variation syndrome 
+426	Kleefstra syndrome
+0	10q11 21q11 23 copy number variation syndrome
+30	A network map of Macrophage stimulating protein MSP signaling
+478	Metabolic Epileptic Disorders
+48	Affected pathways in Duchenne muscular dystrophy
+417	JAK STAT signaling in the regulation of Beta cells
+116	Calcium regulation in cardiac cells
+738	TAR syndrome
+22	4p16 3 copy number variation
+524	NF1 copy number variation syndrome 
+726	Sulfatase and aromatase pathway
+411	Involvement of secretase in neurodegenerative diseases
+678	Role of hypoxia angiogenesis and FGF pathway in OA chondrocyte hypertrophy
+11	17p13 3 YWHAE copy number variation
+23	5q35 copy number variation
+709	Smith Magenis and Potocki Lupski syndrome copy number variation
+743	TGF Smad signaling pathway
+333	Growth factors and hormones in Beta cell proliferation
+608	Pancreatic cancer subtypes
+786	UDP derived sugars synthesis in fibroblasts
+329	Glycosaminoglycan synthesis in fibroblasts
+235	Enterohepatic circulation of bile acids
+798	Vitamin A1 and A5 X pathways
+532	NRXN1 deletion syndrome
+528	NPHP1 deletion syndrome
+24	6q16 copy number variation
+27	7q11 23 distal copy number variation
+1	10q22q23 copy number variation
+4	13q12 or CRYL1 copy number variation 
+3	13q12 12 copy number variation
+6	15q11q13 copy number variation
+8	15q25 copy number variation
+595	PAFAH1B1 copy number variation
+623	Phosphatidyl inositol phosphate pathway
+29	8q11 23 RB1CC1 copy number variation
+370	IDO metabolic pathway
+133	Cell lineage map for neuronal differentiation
+32	ADHD and autism ASD linked metabolic pathways and SNP
+375	IL 19 signaling pathway
+599	PGK1 PKM2 KHKC KHKA acting as protein kinases
+160	Complement activation
+96	Biogenic amine synthesis
+31	ACE inhibitor pathway
+161	Complement and coagulation cascades
+744	TGF beta receptor signaling
+345	Heme biosynthesis
+515	Monoamine GPCRs
+212	EPO receptor signaling
+405	Interferon type I signaling pathways
+561	Notch signaling pathway
+783	Type II interferon signaling
+591	Oxidative phosphorylation
+318	Glucose homeostasis
+238	ErbB signaling pathway
+77	Arachidonate epoxygenase epoxide hydrolase
+128	Catalytic cycle of mammalian flavin containing monooxygenases FMOs 
+737	T cell receptor signaling pathway
+637	Polyol pathway
+754	Tamoxifen metabolism
+727	Sulfation biotransformation reaction
+83	Arylamine metabolism
+94	Benzo a pyrene metabolism
+320	Glucuronidation
+49	Aflatoxin B1 metabolism
+487	Metapathway biotransformation Phase I and II
+491	Methylation pathways
+725	Sudden infant death syndrome SIDS susceptibility pathways
+181	DNA damage response
+182	DNA damage response only ATM dependent 
+242	Estrogen signaling pathway
+797	Vitamin A and carotenoid metabolism
+698	Serotonin HTR1 group and FOS pathway
+516	Monoamine transport
+701	Serotonin receptor 2 and ELK SRF GATA4 signaling
+702	Serotonin receptor 4 6 7 and NR3C signaling
+764	Toll like receptor signaling pathway
+739	TCA cycle aka Krebs or citric acid cycle 
+566	Nucleotide GPCRs
+649	Prostaglandin synthesis and regulation

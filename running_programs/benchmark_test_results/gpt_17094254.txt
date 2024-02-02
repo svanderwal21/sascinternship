@@ -1,0 +1,130 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Thu_Feb_10_18:23:41_PST_2022
+Cuda compilation tools, release 11.6, V11.6.112
+Build cuda_11.6.r11.6/compiler.30978841_0
+Thu Dec  7 17:51:09 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.161.03   Driver Version: 470.161.03   CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GRID V100S-32Q      On   | 00000000:02:01.0 Off |                    0 |
+| N/A   N/A    P0    N/A /  N/A |   2192MiB / 32768MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+res-hpc-gpu08.researchlumc.nl
+Cuda devices: 0
+Script for generating these results: 
+#from github of BioGPT, HuggingFace transformers library, for text generation
+from transformers import pipeline, set_seed
+from transformers import BioGptTokenizer, BioGptForCausalLM
+model = BioGptForCausalLM.from_pretrained("/exports/sascstudent/svanderwal2/programs/BioGPT-Large", cache_dir="/exports/sacstudent/svanderwal2/")
+tokenizer = BioGptTokenizer.from_pretrained("/exports/sascstudent/svanderwal2/programs/BioGPT-Large", cache_dir="/exports/sascstudent/svanderwal2")
+
+#Prompt is GUI1
+#Fine-tuned models for PubMedQA or other benchmarks can be downloaded
+#In this script test performance of normal BioGPT with benchmarks
+#Testing PubMedQA, added the last part
+q1 = "Do mitochondria play a role in remodelling lace plant leaves during programmed cell death? "
+#a1 = yes
+
+generator = pipeline('text-generation', model=model, tokenizer=tokenizer)
+#set_seed(42)
+gen = generator(q1, max_length=150, num_return_sequences=1, do_sample=True)
+for iter in gen:
+        print(iter["generated_text"])
+        print("------------------------------------------")
+
+Results:
+Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?  < / FREETEXT > < / TITLE > ▃ < ABSTRACT > < FREETEXT > In this study we investigated the mitochondrial role in programmed cell death (PCD) of the lace plant. A combination of fluorescence and transmission electron microscope approaches demonstrated a close relationship between mitochondria and the vacuole in PCD of lace plants leaves, indicating that the vacuole might change its position, fusing with, and dividing the mitochondrial membranes. As indicated by confocal microscopy and the decrease in chlorophyll a fluorescence emission, it appears that the mitochondrial membranes depolarize in PCD. Using the fluorescent indicator, chloromethyl-X-rosamine, we also showed that there was a marked increase in the production of reactive oxygen species
+------------------------------------------
+CPU Statistics:
+PID: porcess id
+PR: process priority, the lower, the higher priority
+VIRT: total virt memory
+USER: user name of owner task
+RES: how much phyiscal RAM is used, in kb
+TIME+: CPU Time
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 323614 svander+  20   0   47864  26648  11456 R  37.5   0.0   0:00.12 python3
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 323617 svander+  20   0   62668   4328   3400 R   0.0   0.0   0:00.00 top
+ 323618 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0   10.8g   7.9g 169476 R 100.0   4.2   0:07.82 python3
+ 323622 svander+  20   0   62668   4308   3380 R   6.2   0.0   0:00.01 top
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 323623 svander+  20   0    9220    508    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9702040   6.3g 179792 R  93.8   3.3   0:18.03 python3
+ 323627 svander+  20   0   62668   4372   3448 R   6.2   0.0   0:00.01 top
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 323628 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9760292   6.4g 182020 R  93.8   3.4   0:28.25 python3
+ 323766 svander+  20   0   62668   4232   3312 R   6.2   0.0   0:00.01 top
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 323767 svander+  20   0    9220    528    460 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9786084   6.4g 182020 R  93.8   3.4   0:38.46 python3
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 324087 svander+  20   0   62668   4192   3272 R   0.0   0.0   0:00.00 top
+ 324088 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9808984   6.4g 182020 R  93.8   3.4   0:48.69 python3
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 324219 svander+  20   0   62668   4312   3388 R   0.0   0.0   0:00.00 top
+ 324220 svander+  20   0    9220    516    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9836284   6.4g 182020 R 100.0   3.4   0:59.05 python3
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 324223 svander+  20   0   62668   4232   3308 R   0.0   0.0   0:00.00 top
+ 324224 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9860656   6.5g 182020 R  93.8   3.4   1:09.26 python3
+ 324227 svander+  20   0   62668   4128   3208 R   6.2   0.0   0:00.01 top
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 324228 svander+  20   0    9220    532    464 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9886020   6.5g 182020 R  93.8   3.4   1:19.49 python3
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 324232 svander+  20   0   62668   4256   3336 R   0.0   0.0   0:00.00 top
+ 324233 svander+  20   0    9220    508    440 S   0.0   0.0   0:00.00 grep
+#new iteration
+ 323614 svander+  20   0 9909428   6.5g 182020 R  93.8   3.4   1:29.70 python3
+ 324374 svander+  20   0   62668   4304   3380 R   6.2   0.0   0:00.01 top
+ 323594 svander+  20   0   12868   3276   2872 S   0.0   0.0   0:00.00 slurm_s+
+ 323613 svander+  20   0   12872   3288   2940 S   0.0   0.0   0:00.00 sh
+ 324375 svander+  20   0    9220    512    444 S   0.0   0.0   0:00.00 grep
+#new iteration
+GPU Statistics
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0
+2192, 0

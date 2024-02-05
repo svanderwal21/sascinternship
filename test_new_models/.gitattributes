@@ -1,2 +1,0 @@
-*.safetensors filter=lfs diff=lfs merge=lfs -text
-test_new_models/trained_models_BERT/model.safetensors filter=lfs diff=lfs merge=lfs -text

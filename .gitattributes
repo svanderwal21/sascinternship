@@ -1,4 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd5f04523fbf10f489163c07109b56357ea257518527c859fd3e56440d728fab
-size 215
 *.safetensors filter=lfs diff=lfs merge=lfs -text
+/exports/sascstudent/svanderwal2/programs/test_new_models/trained_models_BERT/model.safetensors filter=lfs diff=lfs merge=lfs -text
